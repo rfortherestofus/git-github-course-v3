@@ -1,0 +1,473 @@
+---
+title: Using Git and GitHub with R
+format:
+  rfortherestofus-slides-revealjs:
+    menu: false
+    progress: false
+    slide-number: true
+    show-slide-number: print
+    center: true
+    incremental: true
+    auto-animate: true
+execute: 
+  message: false
+  warning: false
+  cache: false
+title-slide-attributes:
+  data-background-image: assets/rru-hex-bg-gradient-dark.svg
+  data-background-size: cover
+---
+
+# Introduction to Using Git and GitHub with R {.inverse}
+
+## What is Git? {.inverse}
+
+Video: overview of how git/GitHub work
+
+::: {.notes}
+- If you know anything, it's probably GitHub. We'll come back to this, but it's not the same as Git.
+
+- Show git metaphor (Keyes Architects) with video
+
+- There are a lot of confusing terms and we'll simplify them
+
+- Why you don't need to understand internals/all details of git to use it
+
+- https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29
+
+- Why you should learn to use them:
+
+  1. complete history/backup
+  2. work on code with others at same time
+  3. best way to do project management for code projects
+:::
+
+### Learn more
+
+https://openscapes.org/blog/2022-05-27-github-illustrated-series/
+
+[Git for Humans](https://www.youtube.com/watch?v=eWxxfttcMts)
+
+[Git, GitHub, & GitHub Desktop for beginners](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+
+https://paocorrales.github.io/git-developing-software-together/
+
+https://learn.microsoft.com/en-us/collections/o1njfe825p602p
+
+https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/what-is-version-control#start
+
+https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources
+
+## How the Course Works
+
+- Covers RStudio and Positron in very beginning, RStudio and GH Desktop early on, but only GH Desktop later
+- Won't cover command line (show example)
+
+## Update Everything
+
+- Video: architect has to get new pens and paper
+
+::: {.notes}
+- R
+
+- RStudio
+
+- Positron
+:::
+
+### Your Turn
+
+- Update R
+- Reinstall packages
+- Update RStudio/Positron
+
+# Git
+
+## Install Git
+
+- Video: filing cabinet system
+
+::: {.notes}
+- Install GHD
+- In RStudio/Positron
+:::
+
+### Your Turn
+
+- Install GHD
+- Install git separately (only if necessary): https://git-scm.com/downloads
+- Check git version
+
+## Configure Git
+
+- Video: Get customized sticky notes printed with name and email on them
+
+::: {.notes}
+- In GHD
+- In RStudio/Positron
+:::
+
+### Your Turn
+
+- Configure git with GHD
+
+### Learn More
+
+- https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-git-for-github-desktop
+
+## Create a Local Git Repository
+
+- Video: Create new filing cabinet. 
+
+::: {.notes}
+In both RStudio, Positron, and GHD
+
+In RStudio, talk about it with usethis as well as when creating a new project
+
+Talk about ignoring files (RStudio does this by default; GH Desktop does this if you choose template)
+
+- Why would you ignore files?
+
+Working directory (basically same as repo) (see https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)
+
+Working directory becomes a repository once we init git
+
+Show creating new project in RStudio
+
+- Add git repo when creating new project through GHD/RStudio/Positron
+- Add new repo on existing directory through GHD/RStudio/Positron
+:::
+
+### Your Turn
+
+- Create new Quarto website project in RStudio and create git repo while doing so
+
+## Commits
+
+- Video: architect works for a while and then decides to add work to filing cabinet. Talk about section of desk as staging area to decide which files to include. Commit messages = sticky note attached to files that talk about what has changed. 
+
+::: {.notes}
+Committing
+
+Stage/staging area
+
+Add files
+
+Commit: make small commits
+
+Commit Message (like email subject line; no more than 50/72 characters): typically in present tense
+
+Commit description (like email body) but rarely used
+
+Show in GHD/RStudio/Positron
+:::
+
+### Your Turn
+
+- Make changes to website project
+- Make commit
+
+### Learn More
+
+- https://masalmon.eu/2024/06/03/small-commits/
+- https://www.gitkraken.com/learn/git/best-practices/git-commit-message
+
+## Commit History
+
+- Video: open up filing cabinet and see history
+
+::: {.notes}
+- Diffs in RStudio and GH Desktop (Positron doesn't do them easily)
+:::
+
+### Your Turn
+
+- View commit history in GHD and RStudio
+
+# GitHub
+
+## GitHub Repositories
+
+- Video: GitHub is like central office where all blueprints is hosted. This is good as a backup for an individual, but also it enables collaboration.
+
+::: {.notes}
+There are other systems (GitLab etc)
+
+One repo per project in R
+
+Commit history is same on GH as what we saw locally
+:::
+
+## Connect to GitHub
+
+- Video: Build pneumatic tube that connects desk to central office
+
+::: {.notes}
+Sign up for GH
+
+In GH Desktop and Positron, sign into GitHub
+
+In RStudio, do PAT business
+
+Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages)
+
+Local vs remote
+
+Origin ( = remote; see https://www.git-tower.com/learn/git/glossary/origin#:~:text=cloned%20from.%20More%20precisely%2C%20it,but%20just%20a%20standard%20convention.)
+
+https://www.git-tower.com/learn/git/ebook/en/desktop-gui/remote-repositories/introduction#start
+
+GitHub is your remote
+:::
+
+## Push from Local to Remote
+
+- Video: architect sends blueprint through pneumatic tubes to central office
+
+- In GH Desktop and Positron, publish to GH
+
+- In RStudio, use `usethis::use_github()`
+
+## Pull from Remote to Local
+
+- Video: architect gets blueprints through pneumatic tubes from central office
+
+::: {.notes}
+Create new repo in GH
+
+Fetch vs pull (Pull = fetch + merge)
+
+https://arc.net/l/quote/vsndbbpg
+:::
+
+## Keep Everything in Sync
+
+Video: show blueprints going back and forth
+
+::: {.notes}
+Work locally
+
+Commit along way
+
+Push to GH
+
+Reminder about small commits
+
+Talk about how this has all been working by myself, but next section is about collaboration with others
+
+From here on out, just using GH Desktop
+:::
+
+# Collaboration with GitHub
+
+## Why Use GitHub vs Dropbox, Google Drive, Box, etc?
+
+Video laying out benefits below
+
+::: {.notes}
+With other tools, multiple people can't work on code at same time
+
+- Explain what this would look like for working on blueprint
+
+View history
+
+Project management built into GH
+
+Branches
+
+Publish stuff online
+
+Automatically scheduling code to run through GH Actions (like house being built automatically from blueprints)
+:::
+
+## GitHub Repos
+
+- Video: explain personal vs organization accounts vs forks
+
+::: {.notes}
+Personal vs Organization Accounts
+
+Adding People to Your Repo
+
+Forks: https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github
+:::
+
+## Project Management with GitHub
+
+Video: show board where tasks are posted and people get their tasks each day on arriving to work
+
+::: {.notes}
+Issues
+
+- Reference changes with SHA
+- Task lists
+- Assigning people
+
+Organize issues
+
+- Labels for ongoing things
+- Milestones for one-time things
+- Projects to see all things visually
+
+Notifications
+
+- Do you want to get emails?
+- How to see all notifications on issues/PRs/etc: https://github.com/notifications
+
+Branches and pull requests
+- We'll come back to 
+:::
+
+## Branches
+
+Video: Show architects making copies of blueprints and putting them in different filing cabinets
+
+::: {.notes}
+Why should you use them
+
+- Do PRs to get feedback
+- Test things and only merge back in if you like what you did
+- Test things on live site
+
+Linking issues
+
+Updating from main branch
+:::
+
+## Pull Requests
+
+Video: architect submits work on piece of house and someone else reviews it
+
+::: {.notes}
+Show merging without PR first
+
+Magic words for closing
+
+Code reviews
+
+For your turn have people do PR on their own repo
+:::
+
+### Learn More
+
+Code Review Anxiety Workbook: https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1
+
+## Bring it All Together
+
+Video: show humming office with people working on issues in branches, submitting PRs, etc
+
+::: {.notes}
+Show branching workflow
+Common workflows: https://archive.ph/dt5j6
+:::
+
+# When Things go Wrong
+
+## Can't Pull from GitHub
+
+Video: Show architect with work done locally that would be overwritten by pulling
+
+::: {.notes}
+Need to commit changes locally first
+
+Can use stashes: 
+
+- https://docs.github.com/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop
+- https://happygitwithr.com/pull-tricky
+- https://github.com/MikeMcQuaid/GitInPractice/blob/main/03-FilesystemInteractions.adoc#temporarily-stash-some-changes-git-stash
+- https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning
+
+Talk about why using stashes isn't that great: https://happygitwithr.com/pull-tricky#other-approaches
+
+This is why branches are helpful
+:::
+
+## Can't Push Code to GitHub
+
+Video: Show architect who doesn't have latest code pulled and why he can't push
+
+::: {.notes}
+Have to pull first
+:::
+
+## Merge Conflicts
+
+Video: show conflict where two people edit same part of blueprint file
+
+::: {.notes}
+Sometimes you have conflicts with what someone else did
+
+How to deal:
+
+- Deal with them in text editor locally
+- Deal with them on GitHub.com
+- Use GHD to deal with them
+- Show them when working in main branch and with PRs
+:::
+
+## Use gitignore to Avoid Conflicts
+
+Video: Blueprints get converted into format that builders need, but we don't want this format of the blueprints in the repo because it will cause conflicts
+
+::: {.notes}
+Ignore files that may be commonly overwritten
+
+Ignore sensitive data (see lesson below)
+:::
+
+## Let's Keep Bad Things from Happening in the First Place
+
+Always pull before pushing
+
+Push early and often
+
+Make small commits
+
+- Nick Hodges quote
+- Maelle Salmon blog post
+
+Use branches
+
+If necessary, burn it all Down: https://happygitwithr.com/burn
+
+# Common Git Things
+
+## How to Use Git to Work on Multiple Computers
+
+Video: architect working at office and at home
+
+::: {.notes}
+Video for Hannah: https://show.rfor.us/Q94ng65p
+:::
+
+## How to Avoid Putting Sensitive Information on GitHub
+
+- Video: special proprietary paint color used in blueprints that you don't want on GitHub so you add it to gitignore
+
+::: {.notes}
+- gitignore files
+- Use special location on network drive etc in code that only internal people can access
+- Put data in some other tool and access it with a package like googlesheets4
+- Use environment variables
+- 
+:::
+
+## Continuous Deployment with Netlify
+
+Video: Architect makes builder version of blueprints locally and then pushes them to Netlify 
+
+::: {.notes}
+This is like making a house automatically from blueprints (e.g. house gets built for you)
+:::
+
+## GitHub Actions
+
+Video: Blueprints for builder get built each time there is a commit (or on a schedule)
+
+# Wrapping Up
+
+## Wrapping Up
+
+::: {.notes}
+Ask for testimonials
+:::
