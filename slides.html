@@ -338,15 +338,14 @@
 </section>
 <section id="what-is-git" class="slide level2 inverse center">
 <h2>What is Git?</h2>
+<p>Video: overview of how git/GitHub work</p>
 <aside class="notes">
 <ul>
 <li><p>If you know anything, it’s probably GitHub. We’ll come back to this, but it’s not the same as Git.</p></li>
-<li><p>Show git metaphor (Keyes Architects)</p>
-<ul>
-<li>Can we also show how Dropbox automatically syncs, taking files out of people’s hands and sometimes causing conflicts</li>
-</ul></li>
+<li><p>Show git metaphor (Keyes Architects) with video</p></li>
 <li><p>There are a lot of confusing terms and we’ll simplify them</p></li>
 <li><p>Why you don’t need to understand internals/all details of git to use it</p></li>
+<li><p>https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29</p></li>
 <li><p>Why you should learn to use them:</p>
 <ol type="1">
 <li>complete history/backup</li>
@@ -378,13 +377,19 @@
 <h2>How the Course Works</h2>
 <ul>
 <li class="fragment">Covers RStudio and Positron in very beginning, RStudio and GH Desktop early on, but only GH Desktop later</li>
-<li class="fragment">Won’t cover command line (show example)</li>
+<li class="fragment">I’ll put command line equivalents in Learn More sections, but won’t present on them</li>
+</ul>
+<h3 id="learn-more-1">Learn More</h3>
+<p>Terminal stuff:</p>
+<ul>
+<li class="fragment">https://rogerdudler.github.io/git-guide/</li>
+<li class="fragment">https://show.rfor.us/Np02V7bH</li>
 </ul>
 </section>
 <section id="update-everything" class="slide level2 center">
 <h2>Update Everything</h2>
 <ul>
-<li class="fragment">Video: architect has to get new pens and paper</li>
+<li class="fragment">Video: architect has to get new pens and paper etc</li>
 </ul>
 <aside class="notes">
 <ul>
@@ -403,6 +408,12 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<h3 id="your-turn">Your Turn</h3>
+<ul>
+<li class="fragment">Update R</li>
+<li class="fragment">Reinstall packages</li>
+<li class="fragment">Update RStudio/Positron</li>
+</ul>
 </section></section>
 <section>
 <section id="git" class="title-slide slide level1 center">
@@ -412,31 +423,13 @@
 <section id="install-git" class="slide level2 center">
 <h2>Install Git</h2>
 <ul>
-<li class="fragment"><p>Video: filing cabinet system</p></li>
-<li class="fragment"><p>Install GHD</p></li>
-<li class="fragment"><p>In RStudio</p></li>
-<li class="fragment"><p>In GHD</p></li>
-</ul>
-</section>
-<section id="configure-git" class="slide level2 center">
-<h2>Configure Git</h2>
-<ul>
-<li class="fragment"><p>Video: Add name tags to work desks (or maybe create name stamps?)</p></li>
-<li class="fragment"><p>In RStudio/Positron</p></li>
-<li class="fragment"><p>In GHD</p></li>
-</ul>
-</section>
-<section id="create-a-local-git-repository" class="slide level2 center">
-<h2>Create a Local Git Repository</h2>
-<ul>
-<li class="fragment">Video: Create new filing cabinet.</li>
+<li class="fragment">Video: filing cabinet system</li>
 </ul>
 <aside class="notes">
-<p>In both RStudio, Positron, and GHD</p>
-<p>Talk about ignoring files (RStudio does this by default; GH Desktop does this if you choose template)</p>
-<p>Why would you ignore files?</p>
-<p>Working directory (basically same as repo) (see https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)</p>
-<p>Working directory becomes a repository once we init git</p>
+<ul>
+<li>Install GHD</li>
+<li>In RStudio/Positron</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -448,6 +441,77 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<h3 id="your-turn-1">Your Turn</h3>
+<ul>
+<li class="fragment">Install GHD</li>
+<li class="fragment">Install git separately (only if necessary): https://git-scm.com/downloads</li>
+<li class="fragment">Check git version</li>
+</ul>
+</section>
+<section id="configure-git" class="slide level2 center">
+<h2>Configure Git</h2>
+<ul>
+<li class="fragment">Video: Get customized sticky notes printed with name and email on them</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>In GHD</li>
+<li>In RStudio/Positron</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-2">Your Turn</h3>
+<ul>
+<li class="fragment">Configure git with GHD</li>
+</ul>
+<h3 id="learn-more-2">Learn More</h3>
+<ul>
+<li class="fragment">https://docs.github.com/en/desktop/configuring-and-customizing-github-desktop/configuring-git-for-github-desktop</li>
+</ul>
+</section>
+<section id="create-a-local-git-repository" class="slide level2 center">
+<h2>Create a Local Git Repository</h2>
+<ul>
+<li class="fragment">Video: Create new filing cabinet.</li>
+</ul>
+<aside class="notes">
+<p>In both RStudio, Positron, and GHD</p>
+<p>In RStudio, talk about it with usethis as well as when creating a new project</p>
+<p>Talk about ignoring files (RStudio does this by default; GH Desktop does this if you choose template)</p>
+<ul>
+<li>Why would you ignore files?</li>
+</ul>
+<p>Working directory (basically same as repo) (see https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)</p>
+<p>Working directory becomes a repository once we init git</p>
+<p>Show creating new project in RStudio</p>
+<ul>
+<li>Add git repo when creating new project through GHD/RStudio/Positron</li>
+<li>Add new repo on existing directory through GHD/RStudio/Positron</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-3">Your Turn</h3>
+<ul>
+<li class="fragment">Create new Quarto website project in RStudio and create git repo while doing so</li>
+</ul>
 </section>
 <section id="commits" class="slide level2 center">
 <h2>Commits</h2>
@@ -461,6 +525,7 @@
 <p>Commit: make small commits</p>
 <p>Commit Message (like email subject line; no more than 50/72 characters): typically in present tense</p>
 <p>Commit description (like email body) but rarely used</p>
+<p>Show in GHD/RStudio/Positron</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -472,7 +537,12 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<h3 id="learn-more-1">Learn More</h3>
+<h3 id="your-turn-4">Your Turn</h3>
+<ul>
+<li class="fragment">Make changes to website project</li>
+<li class="fragment">Make commit</li>
+</ul>
+<h3 id="learn-more-3">Learn More</h3>
 <ul>
 <li class="fragment">https://masalmon.eu/2024/06/03/small-commits/</li>
 <li class="fragment">https://www.gitkraken.com/learn/git/best-practices/git-commit-message</li>
@@ -481,21 +551,570 @@
 <section id="commit-history" class="slide level2 center">
 <h2>Commit History</h2>
 <ul>
-<li class="fragment"><p>Video: open up filing cabinet and see history</p></li>
-<li class="fragment"><p>Diffs in RStudio and GH Desktop (Positron doesn’t do them easily)</p></li>
+<li class="fragment">Video: open up filing cabinet and see history</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Diffs in RStudio and GH Desktop (Positron doesn’t do them easily)</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-5">Your Turn</h3>
+<ul>
+<li class="fragment">View commit history in GHD and RStudio</li>
 </ul>
 </section></section>
+<section>
 <section id="github" class="title-slide slide level1 center">
 <h1>GitHub</h1>
+
+</section>
+<section id="github-repositories" class="slide level2 center">
+<h2>GitHub Repositories</h2>
 <ul>
 <li class="fragment">Video: GitHub is like central office where all blueprints is hosted. This is good as a backup for an individual, but also it enables collaboration.</li>
 </ul>
+<aside class="notes">
+<p>There are other systems (GitLab etc)</p>
+<p>One repo per project in R</p>
+<p>Commit history is same on GH as what we saw locally</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-6">Your Turn</h3>
+<p>Open the GitHub repository with the materials for this course</p>
+<p>Click on commits</p>
+<p>Take a look through the commit history to see how the code changed over time</p>
+</section>
+<section id="connect-to-github" class="slide level2 center">
+<h2>Connect to GitHub</h2>
+<ul>
+<li class="fragment">Video: Build pneumatic tube that connects desk to central office</li>
+</ul>
+<aside class="notes">
+<p>Sign up for GH</p>
+<p>In GH Desktop and Positron, sign into GitHub</p>
+<p>In RStudio, do PAT business</p>
+<p>Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See https://arc.net/l/quote/aharrxyw</p>
+<p>Local vs remote</p>
+<p>Origin ( = remote; see https://www.git-tower.com/learn/git/glossary/origin#:~:text=cloned%20from.%20More%20precisely%2C%20it,but%20just%20a%20standard%20convention.)</p>
+<p>https://www.git-tower.com/learn/git/ebook/en/desktop-gui/remote-repositories/introduction#start</p>
+<p>GitHub is your remote</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-7">Your Turn</h3>
+<p>Connect to GH with both GHD and RStudio</p>
+</section>
+<section id="push-from-local-to-remote" class="slide level2 center">
+<h2>Push from Local to Remote</h2>
+<ul>
+<li class="fragment">Video: architect sends blueprint through pneumatic tubes to central office</li>
+</ul>
+<aside class="notes">
+<ul>
+<li><p>In GH Desktop and Positron, publish to GH</p></li>
+<li><p>In RStudio, use <code>usethis::use_github()</code></p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-8">Your Turn</h3>
+<ul>
+<li class="fragment">Push website project to GH</li>
+</ul>
+</section>
+<section id="pull-from-remote-to-local" class="slide level2 center">
+<h2>Pull from Remote to Local</h2>
+<ul>
+<li class="fragment">Video: architect gets blueprints through pneumatic tubes from central office</li>
+</ul>
+<aside class="notes">
+<p>Create new repo in GH</p>
+<p>Fetch vs pull (Pull = fetch + merge)</p>
+<p>https://arc.net/l/quote/vsndbbpg</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-9">Your Turn</h3>
+<ul>
+<li class="fragment">Pull course repo to local</li>
+</ul>
+</section>
+<section id="keep-everything-in-sync" class="slide level2 center">
+<h2>Keep Everything in Sync</h2>
+<p>Video: show blueprints going back and forth</p>
+<aside class="notes">
+<p>Work locally</p>
+<p>Commit along way</p>
+<p>Push to GH</p>
+<p>Reminder about small commits</p>
+<p>Talk about how this has all been working by myself, but next section is about collaboration with others</p>
+<p>From here on out, just using GH Desktop</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-10">Your Turn</h3>
+<ul>
+<li class="fragment"><p>Make commit on local repo</p></li>
+<li class="fragment"><p>Push to GH</p></li>
+<li class="fragment"><p>Do this with both RStudio and GHD</p></li>
+</ul>
+</section></section>
+<section>
+<section id="collaboration-with-github" class="title-slide slide level1 center">
+<h1>Collaboration with GitHub</h1>
+
+</section>
+<section id="why-use-github-vs-dropbox-google-drive-box-etc" class="slide level2 center">
+<h2>Why Use GitHub vs Dropbox, Google Drive, Box, etc?</h2>
+<p>Video laying out benefits below</p>
+<aside class="notes">
+<p>With other tools, multiple people can’t work on code at same time</p>
+<ul>
+<li>Explain what this would look like for working on blueprint</li>
+</ul>
+<p>View history</p>
+<p>Project management built into GH</p>
+<p>Branches</p>
+<p>Publish stuff online</p>
+<p>Automatically scheduling code to run through GH Actions (like house being built automatically from blueprints)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="github-repos" class="slide level2 center">
+<h2>GitHub Repos</h2>
+<ul>
+<li class="fragment">Video: explain personal vs organization accounts vs forks</li>
+</ul>
+<aside class="notes">
+<p>Personal vs Organization Accounts</p>
+<p>Forks: https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github</p>
+<p>Adding People to Your Repo</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="project-management-with-github" class="slide level2 center">
+<h2>Project Management with GitHub</h2>
+<p>Video: show board where tasks are posted and people get their tasks each day on arriving to work</p>
+<aside class="notes">
+<p>Issues</p>
+<ul>
+<li>Reference changes with SHA</li>
+<li>Task lists</li>
+<li>Assigning people</li>
+</ul>
+<p>Organize issues</p>
+<ul>
+<li>Labels for ongoing things</li>
+<li>Milestones for one-time things</li>
+<li>Projects to see all things visually</li>
+</ul>
+<p>Notifications</p>
+<ul>
+<li>Do you want to get emails?</li>
+<li>How to see all notifications on issues/PRs/etc: https://github.com/notifications</li>
+</ul>
+<p>Branches and pull requests - We’ll come back to</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-11">Your Turn</h3>
+<ul>
+<li class="fragment"><p>Create issue</p></li>
+<li class="fragment"><p>Solve issue in your code</p></li>
+<li class="fragment"><p>Make commit</p></li>
+<li class="fragment"><p>Reference commit in issue</p></li>
+<li class="fragment"><p>Close issue</p></li>
+</ul>
+</section>
+<section id="branches" class="slide level2 center">
+<h2>Branches</h2>
+<p>Video: Show architects making copies of blueprints and putting them in different filing cabinets</p>
+<aside class="notes">
+<p>Why should you use them</p>
+<ul>
+<li>Do PRs to get feedback</li>
+<li>Test things and only merge back in if you like what you did</li>
+<li>Test things on live site</li>
+</ul>
+<p>Linking issues</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-12">Your Turn</h3>
+<ul>
+<li class="fragment"><p>Create issue</p></li>
+<li class="fragment"><p>Create branch</p></li>
+<li class="fragment"><p>Solve issue in your code</p></li>
+<li class="fragment"><p>Make commit</p></li>
+</ul>
+</section>
+<section id="pull-requests" class="slide level2 center">
+<h2>Pull Requests</h2>
+<p>Video: architect submits work on piece of house and someone else reviews it</p>
+<aside class="notes">
+<p>Show merging without PR first</p>
+<p>Magic words for closing</p>
+<p>Code reviews</p>
+<p>For your turn have people do PR on their own repo</p>
+<p>Dealing with merge conflicts in PRs (say that this will be discussed more in future lesson)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-13">Your Turn</h3>
+<ul>
+<li class="fragment"><p>Open PR from branch</p></li>
+<li class="fragment"><p>Review code in PR</p></li>
+<li class="fragment"><p>Merge PR</p></li>
+</ul>
+<h3 id="learn-more-4">Learn More</h3>
+<p>Code Review Anxiety Workbook: https://developer-success-lab.gitbook.io/code-review-anxiety-workbook-1</p>
+<aside class="notes">
+<p>Show branching workflow Common workflows: https://archive.ph/dt5j6</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="when-things-go-wrong" class="title-slide slide level1 center">
+<h1>When Things go Wrong</h1>
+
+</section>
+<section id="cant-pull-from-github" class="slide level2 center">
+<h2>Can’t Pull from GitHub</h2>
+<p>Video: Show architect with work done locally that would be overwritten by pulling</p>
+<aside class="notes">
+<p>Need to commit changes locally first</p>
+<p>Can use stashes:</p>
+<ul>
+<li>https://docs.github.com/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop</li>
+<li>https://happygitwithr.com/pull-tricky</li>
+<li>https://github.com/MikeMcQuaid/GitInPractice/blob/main/03-FilesystemInteractions.adoc#temporarily-stash-some-changes-git-stash</li>
+<li>https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning</li>
+</ul>
+<p>Talk about why using stashes isn’t that great: https://happygitwithr.com/pull-tricky#other-approaches</p>
+<p>This is why branches are helpful</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-14">Your Turn</h3>
+<p>Make edit to website locally but don’t commit changes</p>
+<p>Make edit to website on GitHub.com and saave it</p>
+<p>Pull from GH and get message about needing to commit changes before pulling</p>
+<p>Pull again, making sure you can successfully bring in the changes from GitHub</p>
+<p>Heads up: you should get a message about a merge conflict. We’ll deal with this in the next lesson!</p>
+</section>
+<section id="merge-conflicts" class="slide level2 center">
+<h2>Merge Conflicts</h2>
+<p>Video: show conflict where two people edit same part of blueprint file</p>
+<aside class="notes">
+<p>Sometimes you have conflicts with what someone else did</p>
+<p>How to deal:</p>
+<ul>
+<li>Deal with them in text editor locally</li>
+<li>Use GHD to deal with them</li>
+<li>Deal with them on GitHub.com</li>
+<li>Show them when working in main branch and with PRs</li>
+</ul>
+<p>In PRs, update branch from main periodically in order to not get too far behind and avoid merge conflicts when submitting PR</p>
+<p>From Deepansh Khurana PPT:</p>
+<blockquote>
+<p>Resolve Conflicts Locally: When you resolve conflicts on DevOps, GitHub or GitLab, you commit before you test. When you resolve conflicts locally, you commit after you test. This helps you avoid unexpected and unintentional breakage in the code.</p>
+</blockquote>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-15">Your Turn</h3>
+<p>You should have a merge conflict from last lesson</p>
+<p>Fix merge conflict using RStudio, GHD, or GitHub.com</p>
+<p>Make a commit if necessary</p>
+<p>Push code to GitHub</p>
+<h3 id="learn-more-5">Learn More</h3>
+<ul>
+<li class="fragment">Meghan Harris posit::conf talk</li>
+</ul>
+</section>
+<section id="cant-push-code-to-github" class="slide level2 center">
+<h2>Can’t Push Code to GitHub</h2>
+<p>Video: Show architect who doesn’t have latest code pulled and why he can’t push</p>
+<aside class="notes">
+<p>Have to pull first</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-16">Your Turn</h3>
+<p>Make an edit on on GitHub</p>
+<p>Make an edit locally</p>
+<p>Attempt to push your changes from RStudio to GitHub (it should fail)</p>
+<p>Pull in changes from GitHub</p>
+<p>Deal with any merge conflicts</p>
+<p>Push your changes from RStudio to GitHub</p>
+</section>
+<section id="use-gitignore-to-avoid-conflicts" class="slide level2 center">
+<h2>Use gitignore to Avoid Conflicts</h2>
+<p>Video: I have cheatsheet of unit conversions, but I never want this to be committed so I add it to gitignore</p>
+<aside class="notes">
+<p>Ignore sensitive data (see lesson below)</p>
+<p>Ignore files that may be commonly overwritten</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="your-turn-17">Your Turn</h3>
+<p>Add _site to gitignore</p>
+</section>
+<section id="best-practices-for-using-git" class="slide level2 center">
+<h2>Best Practices for Using Git</h2>
+<aside class="notes">
+<p>Always pull before pushing</p>
+<p>Make small commits</p>
+<ul>
+<li>Nick Hodges quote</li>
+<li>Maelle Salmon blog post</li>
+</ul>
+<p>Push early and often</p>
+<p>Use branches</p>
+<p>If necessary, burn it all Down: https://happygitwithr.com/burn</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="common-git-things" class="title-slide slide level1 center">
+<h1>Common Git Things</h1>
+
+</section>
+<section id="how-to-use-git-to-work-on-multiple-computers" class="slide level2 center">
+<h2>How to Use Git to Work on Multiple Computers</h2>
+<p>Video: architect working at office and at home</p>
+<aside class="notes">
+<p>Video for Hannah: https://show.rfor.us/Q94ng65p</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-to-avoid-putting-sensitive-information-on-github" class="slide level2 center">
+<h2>How to Avoid Putting Sensitive Information on GitHub</h2>
+<ul>
+<li class="fragment">Video: special proprietary paint color used in blueprints that you don’t want on GitHub so you add it to gitignore</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>gitignore files</li>
+<li>Use special location on network drive etc in code that only internal people can access</li>
+<li>Put data in some other tool and access it with a package like googlesheets4</li>
+<li>Use environment variables</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="continuous-deployment-with-netlify" class="slide level2 center">
+<h2>Continuous Deployment with Netlify</h2>
+<p>Video: Architect makes builder version of blueprints locally and then pushes them to Netlify</p>
+<aside class="notes">
+<p>This is like making a house automatically from blueprints (e.g.&nbsp;house gets built for you)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="github-actions" class="slide level2 center">
+<h2>GitHub Actions</h2>
+<p>Video: Blueprints for builder get built each time there is a commit (or on a schedule)</p>
+</section></section>
+<section>
+<section id="wrapping-up" class="title-slide slide level1 center">
+<h1>Wrapping Up</h1>
+
+</section>
+<section id="bring-it-all-together" class="slide level2 center">
+<h2>Bring it All Together</h2>
+<p>Video: show humming office with people working on issues in branches, submitting PRs, etc. Redo initial video but add in specific git language.</p>
+</section>
+<section id="wrapping-up-1" class="slide level2 center">
+<h2>Wrapping Up</h2>
+<aside class="notes">
+<p>Ask for testimonials</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
