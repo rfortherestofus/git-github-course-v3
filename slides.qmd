@@ -42,11 +42,11 @@ Why you should learn to use Git and GitHub
   3. best way to do project management for code projects
 :::
 
-## How the Course Works
+## How the Course Works {.inverse}
 
 ::: {.notes}
 Tools we'll use
-- Covers RStudio and Positron in very beginning, RStudio and GH Desktop early on, but only GH Desktop later
+- Covers RStudio and GH Desktop early on, but only GH Desktop later
 - I'll put command line equivalents in Learn More sections, but won't present on them
 
 Why I use these tools
@@ -58,7 +58,7 @@ Why I use these tools
 :::
 
 
-## Update Everything
+## Update Everything {.inverse}
 
 ::: {.notes}
 Video: 
@@ -68,53 +68,52 @@ Video:
 Update
 - R
 - RStudio
-- Positron
 :::
 
-### Your Turn
+## Your Turn {.your-turn} 
 
-- Update R
-- Reinstall packages
-- Update RStudio/Positron
+1. Update R
+1. Reinstall packages
+1. Update RStudio
 
-# Git
+# Git {.inverse}
 
-## Install Git
+## Install Git {.inverse}
 
 ::: {.notes}
 - Video: filing cabinet system set up
 
-- Install GHD
+- Install GitHub Desktop
 - Show how to install git by itself if necessary
-- Show git in RStudio/Positron
+- Show git in RStudio
 - Check git version
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
-- Install GHD
-- Install git separately (only if necessary): https://git-scm.com/downloads
-- Check git version
+1. Install GitHub Desktop
+1. Install git separately (only if necessary)
+1. Confirm git installed correctly by checking version using `git --version` in the terminal
 
-## Configure Git
+## Configure Git {.inverse}
 
 ::: {.notes}
 - Video: Get customized sticky notes printed with name and email on them
 
 - In GHD
-- In RStudio/Positron
+- In RStudio
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
-- Configure git with GHD
+1. Configure Git by adding a user name and email to your profile using GitHub Desktop
 
-## Create a Local Git Repository
+## Create a Local Git Repository {.inverse}
 
 ::: {.notes}
 - Video: Get new filing cabinet to add to office
 
-In RStudio, Positron, and GHD
+In RStudio and GHD
 - When starting new project
 - In RStudio, talk about it with usethis as well as when creating a new project
 - When creating repo from existing project
@@ -130,11 +129,12 @@ Ignoring files
 - Make sure you don't include things by accident
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
-- Create new Quarto website project in RStudio and create git repo while doing so
+1. Create new Quarto website project in RStudio
+1. Make sure to create git repo while doing creating new project
 
-## Commits
+## Commits {.inverse}
 
 ::: {.notes}
 Video: 
@@ -152,13 +152,13 @@ Committing
 - Commit description (like email body) but rarely used
 - Make small commits
 
-Show in GHD/RStudio/Positron
+Show in GHD/RStudio
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
-- Make changes to website project
-- Make commit
+1. Make changes to website project
+1. Make commit
 
 ## Commit History
 
@@ -168,12 +168,12 @@ Video
 - Git also gives you the ability to see changes between each commit (diffs).
 
 - View history of changes
-- Diffs in RStudio, Positron, and GH Desktop
+- Diffs in RStudio and GH Desktop
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
-- View commit history in RStudio, Positron, and GH Desktop
+- View commit history in RStudio and GH Desktop
 
 # GitHub
 
@@ -190,7 +190,7 @@ David
 - Commit history is same on GH as what we saw locally
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 Open the GitHub repository for my website project
 
@@ -207,7 +207,7 @@ Video:
 
 David: 
 - Sign up for GH
-- In GH Desktop and Positron, sign into GitHub
+- In GH Desktop, sign into GitHub
 - In RStudio, do PAT business
 - Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See https://arc.net/l/quote/aharrxyw
 
@@ -216,7 +216,7 @@ Local vs remote
 - GitHub is your remote
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 Connect to GH with both GHD and RStudio
 
@@ -228,12 +228,12 @@ Video:
 - Initial push happens with all materials going from office to HQ
 
 Publish repo
-- In GH Desktop and Positron, publish to GH
+- In GH Desktop, publish to GH
 - In RStudio, use `usethis::use_github()`
 - Talk about public vs private repos
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 - Push website project to GH
 
@@ -248,7 +248,7 @@ David
 - Create new repo on GH and clone it locally
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 - Clone repo to local
 
@@ -267,19 +267,19 @@ Pushing
 - Talk about how this has all been working by myself, but next section is about collaboration with others
 
 Pulling
-- Show it in RStudio + Positron + GHD
+- Show it in RStudio + GHD
 - Fetch vs pull (Pull = fetch + merge) see https://arc.net/l/quote/vsndbbpg
 
 From here on out, just using GH Desktop
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 - Make commit on local repo
 
 - Push to GH
 
-- Do this with RStudio, Positron, and GHD
+- Do this with RStudio and GHD
 
 # Collaboration with GitHub
 
@@ -343,7 +343,7 @@ Branches and pull requests
 - We'll come back to 
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 - Create issue
 
@@ -369,7 +369,7 @@ Why should you use them
 Linking issues to branches
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 - Create issue and associated branch
 
@@ -392,7 +392,7 @@ David
 For your turn have people do PR on their own repo
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 - Open PR from branch
 
@@ -421,7 +421,7 @@ Talk about why using stashes isn't that great: https://happygitwithr.com/pull-tr
 This is why branches are helpful
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 Make edit to website locally but don't commit changes
 
@@ -454,7 +454,7 @@ From Deepansh Khurana PPT:
 > Resolve Conflicts Locally: When you resolve conflicts on DevOps, GitHub or GitLab, you commit before you test. When you resolve conflicts locally, you commit after you test. This helps you avoid unexpected and unintentional breakage in the code.
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 You should have a merge conflict from last lesson
 
@@ -472,7 +472,7 @@ Video: Show architect who doesn't have latest code pulled and why he can't push
 Have to pull first
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 Make an edit on on GitHub
 
@@ -500,7 +500,7 @@ David
 - Ignore files that may be commonly overwritten
 :::
 
-### Your Turn
+## Your Turn {.your-turn}
 
 Add _site to gitignore
 
