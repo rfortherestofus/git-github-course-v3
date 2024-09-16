@@ -3,7 +3,7 @@ title: Using Git and GitHub with R
 format: 
   html:
     toc: true
-
+    toc-expand: 4
 ---
 
 # Overall Notes
