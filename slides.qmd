@@ -6,9 +6,10 @@ format:
     progress: false
     slide-number: true
     show-slide-number: print
-    center: true
-    incremental: true
+    center: false
+    incremental: false
     auto-animate: true
+    slide-level: 4
 execute: 
   message: false
   warning: false
@@ -22,72 +23,79 @@ title-slide-attributes:
 
 ## What is Git? {.inverse}
 
-::: {.notes}
-Intro
+### On Camera
+
 - If you've used R for a while, you've probably wondered how to work with others
 - This course will teach you how
 - In the process, you'll learn to use Git and GitHub, which are great tools even if you are working solo on a project
 - Git and GitHub have some incredibly confusing concepts so we'll use a metaphor throughout this course
 
-Video
-- Show git metaphor Keyes Architects video
+### Animated Video
 
-Git + GitHub
+
+### On Screen
+
+#### Git + GitHub
+
 - There are a lot of confusing terms and we'll simplify them
 - Why you don't need to understand internals/all details of git to use it
 
-Why you should learn to use Git and GitHub
-  1. complete history/backup
-  2. work on code with others efficiently
-  3. best way to do project management for code projects
-:::
+#### Why you should learn to use Git and GitHub
+
+1. complete history/backup
+2. work on code with others efficiently
+3. best way to do project management for code projects
 
 ## How the Course Works {.inverse}
 
-::: {.notes}
-Tools we'll use
+### On Camera
+
+#### Tools we'll use
+
 - Covers RStudio and GH Desktop early on, but only GH Desktop later
 - I'll put command line equivalents in Learn More sections, but won't present on them
 
-Why I use these tools
-- Lots of uppity people talking about terminal, but Jenny Bryan says: no merit badges for git
+#### Why I use these tools
+
+- Lots of uppity people talking about terminal, but as Jenny Bryan says: [no merit badges for git](https://happygitwithr.com/git-client#no-one-is-giving-out-git-nerd-merit-badges)
 - For simple git stuff, RStudio is all you need
 - If you want to do more complicated things, use GHD
-- GHD lets you do the thing you want without worrying about esoteric terminal commands: https://show.rfor.us/l9F8ZZNp
-- GHD is actually better per Daniel Sjoberg quote:  https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29
-:::
-
+- GHD lets you do the thing you want without worrying about esoteric terminal commands: <https://show.rfor.us/l9F8ZZNp>
+- GHD is actually better per [Daniel Sjoberg quote](https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29)  
 
 ## Update Everything {.inverse}
 
-::: {.notes}
-Video: 
-- architect has to get new pens and paper etc
-- Or maybe Drafting Tools: Architect’s scale, T-square, compass, protractor, and drafting pencils. https://arc.net/l/quote/dhzdcagw
+### On Camera
 
-Update
-- R
-- RStudio
-:::
+### Animated Video
+
+### On Screen
+
+- Update R
+- Update RStudio
 
 ## Your Turn {.your-turn} 
 
 1. Update R
-1. Reinstall packages
+
+1. Reinstall packages if necessary
+
 1. Update RStudio
 
 # Git {.inverse}
 
 ## Install Git {.inverse}
 
-::: {.notes}
-- Video: filing cabinet system set up
+### On Camera
+
+### Animated Video
+
+### On Screen
 
 - Install GitHub Desktop
 - Show how to install git by itself if necessary
 - Show git in RStudio
 - Check git version
-:::
 
 ## Your Turn {.your-turn}
 
@@ -97,12 +105,15 @@ Update
 
 ## Configure Git {.inverse}
 
-::: {.notes}
-- Video: Get customized sticky notes printed with name and email on them
+### On Camera
+
+### Animated Video
+
+
+### On Screen
 
 - In GHD
 - In RStudio
-:::
 
 ## Your Turn {.your-turn}
 
@@ -110,304 +121,347 @@ Update
 
 ## Create a Local Git Repository {.inverse}
 
-::: {.notes}
-- Video: Get new filing cabinet to add to office
+### On Camera
 
-In RStudio and GHD
+### Animated Video
+
+### On Screen
+
+#### In RStudio and GHD
+
 - When starting new project
 - In RStudio, talk about it with usethis as well as when creating a new project
 - When creating repo from existing project
 
-Working directory
-- Working directory (basically same as repo) (see https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3)
-- "The working directory is like a work bench it is where you edit your files, add new files and delete files." - https://arc.net/l/quote/pzezrgof
+#### Working directory
+
+- Working directory (basically same as repo) (see [here](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3))
+- "The working directory is like a work bench it is where you edit your files, add new files and delete files." - <https://arc.net/l/quote/pzezrgof>
 - Working directory becomes a repository once we create local git repo
 
-Ignoring files
+#### Ignoring files
+
 - RStudio does this by default; GH Desktop does this if you choose template
 - Why would you ignore files?
 - Make sure you don't include things by accident
-:::
 
 ## Your Turn {.your-turn}
 
-1. Create new Quarto website project in RStudio
+1. Create a new Quarto website project in RStudio
 1. Make sure to create git repo while doing creating new project
 
 ## Commits {.inverse}
 
-::: {.notes}
-Video: 
-- architect works for a while and then decides to add work to filing cabinet. 
+### On Camera
+
+### Animated Video
+
+
+### On Screen
+
 - Staging area: Talk about section of desk as staging area to decide which files to include. 
 - Commit messages = sticky note attached to files that talk about what has changed. 
 - Commit = add things in file folder and attach commit message. 
 - Hash = unique identifier stamped on file folder as it goes through tubes.
 
-Stage/staging area
+#### Stage/staging area
 - Choosing which files to include in repo
 
-Committing
+#### Committing
+
 - Commit Message (like email subject line; no more than 50/72 characters): typically in present tense
 - Commit description (like email body) but rarely used
 - Make small commits
 
 Show in GHD/RStudio
-:::
+
 
 ## Your Turn {.your-turn}
 
-1. Make changes to website project
-1. Make commit
+1. Change title of your Quarto website by editing the `_quarto.yml` file
 
-## Commit History
+Then, in GitHub Desktop or RStudio:
 
-::: {.notes}
-Video
-- open up filing cabinet and see history. 
-- Git also gives you the ability to see changes between each commit (diffs).
+1. Add the `_quarto.yml` file in the staging area
+
+1. Add a commit message
+
+1. Make a commit
+
+## Commit History {.inverse}
+
+### On Camera
+
+### Animated Video
+
+### On Screen
 
 - View history of changes
-- Diffs in RStudio and GH Desktop
-:::
+- Diffs in GHD and RStudio
 
 ## Your Turn {.your-turn}
 
-- View commit history in RStudio and GH Desktop
+- View commit history in GitHub Desktop and/or RStudio
 
-# GitHub
+# GitHub {.inverse}
 
-## GitHub Repositories
+## GitHub Repositories {.inverse}
 
-::: {.notes}
-Video
-- GitHub is like central office where all blueprints is hosted. 
-- This is good as a backup for an individual, but also it enables collaboration.
+### On Camera
 
-David
+### Animated Video
+
+### On Screen
+
 - There are other systems (GitLab etc)
 - One repo per project in R
 - Commit history is same on GH as what we saw locally
-:::
 
 ## Your Turn {.your-turn}
 
-Open the GitHub repository for my website project
+- Open the GitHub repository for my website project
 
-Click on commits
+- Click on commits
 
-Take a look through the commit history to see how the code changed over time
+- Take a look through the commit history to see how the code changed over time
 
-## Connect to GitHub
+## Connect to GitHub {.inverse}
 
-::: {.notes}
-Video: 
-- Build pneumatic tube that connects desk to central office. 
-- Talk about local vs remote/origin
+### On Camera
 
-David: 
+### Animated Video
+
+### On Screen
+
+#### Connect to GitHub
+
 - Sign up for GH
 - In GH Desktop, sign into GitHub
 - In RStudio, do PAT business
 - Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See https://arc.net/l/quote/aharrxyw
 
-Local vs remote
+#### Local vs remote
+
 - Local vs remote/origin (see https://arc.net/l/quote/muqmphgn)
 - GitHub is your remote
-:::
 
 ## Your Turn {.your-turn}
 
-Connect to GH with both GHD and RStudio
+- Connect to GitHub using both GitHub Desktop and RStudio
 
-## Push Repository from Local to Remote
+## Publish Repository from Local to Remote {.inverse}
 
-::: {.notes}
-Video: 
-- pneumatic tubes (branch off of main tube connecting office to HQ) connect local repo to remote repo
-- Initial push happens with all materials going from office to HQ
+### On Camera
 
-Publish repo
+### Animated Video
+
+### On Screen
+
 - In GH Desktop, publish to GH
 - In RStudio, use `usethis::use_github()`
 - Talk about public vs private repos
-:::
 
 ## Your Turn {.your-turn}
 
-- Push website project to GH
+- Publish your website project to GitHub using GitHub Desktop or RStudio
 
-## Pull Repository from Remote to Local
+## Clone Repository from Remote to Local {.inverse}
 
-::: {.notes}
-Video
-- pneumatic tubes built to connect HQ to office
-- Initial pull (clone) happens with all materials going from HQ to office
+### On Camera
 
-David
+### Animated Video
+
+### On Screen
+
 - Create new repo on GH and clone it locally
-:::
+- Show how to do it with GHD and RStudio
 
 ## Your Turn {.your-turn}
 
-- Clone repo to local
+- Clone my website project
 
 ## Keep Local and Remote in Sync
 
+### On Camera
 
-::: {.notes}
-Video
-- show blueprints going back and forth
+### Animated Video
 
-Pushing
+### On Screen
+
+#### Pushing
+
 - Work locally
 - Commit along way
 - Push to GH
 - Reminder about small commits
 - Talk about how this has all been working by myself, but next section is about collaboration with others
 
-Pulling
+#### Pulling
+
 - Show it in RStudio + GHD
 - Fetch vs pull (Pull = fetch + merge) see https://arc.net/l/quote/vsndbbpg
 
-From here on out, just using GH Desktop
-:::
+### On Camera
+
+- This is the last thing we'll do with RStudio
+- From here on out, just using GH Desktop
 
 ## Your Turn {.your-turn}
 
-- Make commit on local repo
+- Make a commit in your local repo
 
-- Push to GH
+- Push your commit to GitHub using GitHub Desktop or RStudio
 
-- Do this with RStudio and GHD
+# Collaboration with GitHub {.inverse}
 
-# Collaboration with GitHub
+## Why Use GitHub for Collaboration? {.inverse}
 
-## Why Use GitHub vs Dropbox, Google Drive, Box, etc?
+### On Camera
 
-::: {.notes}
+### Animated Video
+
 No animated video
 
-Benefits: 
+### On Screen
 
-Backup / able to view history
+#### Backup / able to view history
 
-Collaboration
+#### Collaboration
+
 - With other tools, multiple people can't work on code at same time
 - Explain what this would look like for working on blueprint
 
-Project management built into GH
+#### Project management built into GH
+
 - Issues
 - Branches/PRs
 
-Automation
+#### Automation
+
 - Publish stuff online
 - Automatically scheduling code to run through GH Actions (like blueprints being printed automatically)
-:::
 
-## Setting up GitHub Repositories for Collaboration
+## Setting up GitHub Repositories for Collaboration {.inverse}
 
-::: {.notes}
+### On Camera
+
+### Animated Video
+
 No animated video
 
-David
+### On Screen
+
 - Personal vs Organization Accounts
 - Adding People to Your Repo
-- Forks: https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github
-:::
+- [Forks](https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github) 
 
-## Project Management with GitHub
+## Project Management with GitHub {.inverse}
 
-::: {.notes}
-Video: show board where tasks are posted and architects get their tasks each day on arriving to work
+### On Camera
 
-Issues
+### Animated Video
+
+### On Screen
+
+#### Issues
 
 - Reference changes with SHA
 - Task lists
 - Assigning people
 
-Organize issues
+#### Organize issues
 
 - Labels for ongoing things
 - Milestones for one-time things
 - Projects to see all things visually
 
-Notifications
+#### Notifications
 
 - Do you want to get emails?
 - How to see all notifications on issues/PRs/etc: https://github.com/notifications
 
-Branches and pull requests
+#### Branches and pull requests
 
-- We'll come back to 
-:::
+- We'll come back to them
 
 ## Your Turn {.your-turn}
 
-- Create issue
+1. Create an issue in your GitHub repository
 
-- Solve issue in your code
+1. Solve the issue by working in your local project
 
-- Make commit
+1. Make a commit and push to GitHub
 
-- Reference commit in issue
+1. Add a comment in your issue, saying you completed the issue
 
-- Close issue
+1. In your comment, use the SHA to reference the changes you made
 
-## Branches
+1. Close the issue
 
-::: {.notes}
-Video: Show architects making copies of blueprints and putting them in different shelves of repo filing cabinet
+## Branches {.inverse}
 
-Why should you use them
+### On Camera
+
+### Animated Video
+
+### On Screen
+
+#### Why should you use them
 
 - Do PRs to get feedback
 - Test things and only merge back in if you like what you did
 - Test things on live site
 
-Linking issues to branches
-:::
+#### Linking issues to branches
 
 ## Your Turn {.your-turn}
 
-- Create issue and associated branch
+1. Create an issue and associated branch on GitHub
 
-- Solve issue in your code
+1. Use GitHub Desktop to switch to the branch you created
 
-- Make commit
+1. Work in your branch to complete the issue
 
-## Pull Requests
+1. Make a commit in your branch
 
-::: {.notes}
-Video: architect submits work on piece of house and someone else reviews it
+1. Push your commit to GitHub
 
-David
+1. Make sure you can see the commit in the branch in your GitHub repo
+
+## Pull Requests {.inverse}
+
+### On Camera
+
+### Animated Video
+
+### On Screen
+
 - Show merging without PR first and explain why it isn't ideal 
 - Show PR
 - Dealing with merge conflicts in PRs (say that this will be discussed more in future lesson)
 - Code reviews
 - Magic words for closing
 
-For your turn have people do PR on their own repo
-:::
-
 ## Your Turn {.your-turn}
 
-- Open PR from branch
+- Create a pull request from GitHub Desktop
 
-- Review code in PR
+- Review the pull request on GitHub
 
-- Merge PR
+- Merge your pull request
 
-# Common Git Problems and Solutions
+- Make sure your GitHub issue is also closed after the pull request is merged
 
-## Can't Pull from GitHub
+# Common Git Problems and Solutions {.inverse}
 
-::: {.notes}
-Video: Show architect with work done locally that would be overwritten by pulling
+## Can't Pull from GitHub {.inverse}
 
-David
+### On Camera
+
+### Animated Video
+
+### On Screen
+
 - Need to commit changes locally first
 - Can use stashes: 
   - https://docs.github.com/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop
@@ -419,24 +473,28 @@ David
 Talk about why using stashes isn't that great: https://happygitwithr.com/pull-tricky#other-approaches
 
 This is why branches are helpful
-:::
 
 ## Your Turn {.your-turn}
 
-Make edit to website locally but don't commit changes
+1. Make an edit to website locally but **don't commit changes**
 
-Make edit to website on GitHub.com and saave it
+1. Make edit to website on GitHub.com and save it
 
-Pull from GH and get message about needing to commit changes before pulling
+1. Attempt to pull from GitHub. You should get a message about needing to commit changes before pulling.
 
-Pull again, making sure you can successfully bring in the changes from GitHub
+1. Commit your local changes
+
+1. Pull again, making sure you can successfully bring in the changes from GitHub
 
 Heads up: you should get a message about a merge conflict. We’ll deal with this in the next lesson!
 
-## Merge Conflicts
+## Merge Conflicts {.inverse}
 
-::: {.notes}
-Video: show conflict where two people edit same part of blueprint file
+### On Camera
+
+### Animated Video
+
+### On Screen
 
 Sometimes you have conflicts with what someone else did
 
@@ -452,64 +510,62 @@ In PRs, update branch from main periodically in order to not get too far behind 
 From Deepansh Khurana PPT:
 
 > Resolve Conflicts Locally: When you resolve conflicts on DevOps, GitHub or GitLab, you commit before you test. When you resolve conflicts locally, you commit after you test. This helps you avoid unexpected and unintentional breakage in the code.
-:::
 
 ## Your Turn {.your-turn}
 
-You should have a merge conflict from last lesson
+1. You should have a merge conflict from last lesson
 
-Fix merge conflict using RStudio, GHD, or GitHub.com
+1. Fix merge conflict using GitHub Desktop, RStudio, or GitHub.com
 
-Make a commit if necessary
+1. Make a commit
 
-Push code to GitHub
+1. Push your code to GitHub
 
-## Can't Push Code to GitHub
+## Can't Push Code to GitHub {.inverse}
 
-::: {.notes}
-Video: Show architect who doesn't have latest code pulled and why he can't push
+### On Camera
 
-Have to pull first
-:::
+### Animated Video
+
+### On Screen
 
 ## Your Turn {.your-turn}
 
-Make an edit on on GitHub
+1. Make an edit on GitHub
 
-Make an edit locally
+1. Make an edit locally
 
-Attempt to push your changes from RStudio to GitHub (it should fail)
+1. Attempt to push your changes from RStudio to GitHub (it should fail)
 
-Pull in changes from GitHub
+1. Pull in changes from GitHub
 
-Deal with any merge conflicts
+1. Deal with any merge conflicts
 
-Push your changes from RStudio to GitHub
+1. Push your changes to GitHub
 
-## Use gitignore to Avoid Conflicts
+## Use gitignore to Avoid Conflicts {.inverse}
 
-::: {.notes}
-Video: 
-- Architect has cheatsheet of unit conversions, but never wants this to be committed so adds it to gitignore
-- Or has something proprietary and wants to ensure it won't be posted by accident
-- Or has files that are created from source code that will likely cause merge conflicts so doesn't want them tracked
+### On Camera
 
-David
+### Animated Video
+
+### On Screen
+
 - Ignore things you never want added (better than unchecking them every commit)
 - Ignore sensitive data (see lesson below)
 - Ignore files that may be commonly overwritten
-:::
 
 ## Your Turn {.your-turn}
 
-Add _site to gitignore
+1. Add `_site` to gitignore
 
-## Best Practices for Using Git and GitHub
+## Best Practices for Using Git and GitHub {.inverse}
 
-::: {.notes}
-No animated video
+### On Camera
 
-Always pull before pushing
+### Animated Video
+
+### On Screen
 
 Make small commits
 
@@ -521,46 +577,60 @@ Push early and often
 Use branches
 
 If necessary, burn it all Down: https://happygitwithr.com/burn
-:::
 
-# Common Git Techniques
+# Common Git Techniques {.inverse}
 
-## How to Work on Multiple Computers with Git and GitHub
+## How to Work on Multiple Computers with Git and GitHub {.inverse}
+
+### On Camera
+
+### Animated Video
+
+### On Screen
 
 ::: {.notes}
-Video: architect working at office and at home
-
 Video for Hannah: https://show.rfor.us/Q94ng65p
 :::
 
-## How to Avoid Putting Sensitive Information on GitHub
+## How to Avoid Putting Sensitive Information on GitHub {.inverse}
 
-::: {.notes}
-- Video: special proprietary paint color used in blueprints that you don't want on GitHub so you add it to gitignore
+### On Camera
+
+### Animated Video
+
+### On Screen
 
 Options:
 - gitignore files
 - Use special location on network drive etc in code that only internal people can access
 - Put data in some other tool and access it with a package like googlesheets4
 - Use environment variables
-:::
 
-## Continuous Deployment
+## Continuous Deployment 
 
+### On Camera
 
-::: {.notes}
-Video: Architect makes builder version of blueprints locally and then pushes them to Netlify
-:::
+### Animated Video
 
-## Use GitHub Actions to Run Code Automatically
+### On Screen
 
-::: {.notes}
-Video: Blueprints for builder get built each time there is a commit (or on a schedule)
-:::
+- Unignore `_site`
+- Show using GH Pages
+- Show using Netlify
 
-# Wrapping Up
+## Use GitHub Actions to Run Code Automatically {.inverse}
 
-## A Git and GitHub Workflow in Action
+### On Camera
+
+### Animated Video
+
+### On Screen
+
+- Set up GH Action
+
+# Wrapping Up {.inverse}
+
+## A Git and GitHub Workflow in Action {.inverse}
 
 ::: {.notes}
 Video: 
@@ -568,7 +638,7 @@ Video:
 - Redo initial video but add in specific git language.
 :::
 
-## Wrapping up Using Git and GitHub with R
+## Wrapping up Using Git and GitHub with R {.inverse}
 
 ::: {.notes}
 Ask for testimonials

@@ -336,514 +336,782 @@
 <h1>Introduction to Using Git and GitHub with R</h1>
 
 </section>
-<section id="what-is-git" class="slide level2 inverse center">
+<section id="what-is-git" class="title-slide slide level2 inverse center">
 <h2>What is Git?</h2>
-<aside class="notes">
-<p>Intro - If you’ve used R for a while, you’ve probably wondered how to work with others - This course will teach you how - In the process, you’ll learn to use Git and GitHub, which are great tools even if you are working solo on a project - Git and GitHub have some incredibly confusing concepts so we’ll use a metaphor throughout this course</p>
-<p>Video - Show git metaphor Keyes Architects video</p>
-<p>Git + GitHub - There are a lot of confusing terms and we’ll simplify them - Why you don’t need to understand internals/all details of git to use it</p>
-<p>Why you should learn to use Git and GitHub 1. complete history/backup 2. work on code with others efficiently 3. best way to do project management for code projects</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="how-the-course-works" class="slide level2 inverse center">
+<section id="on-camera" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+<ul>
+<li>If you’ve used R for a while, you’ve probably wondered how to work with others</li>
+<li>This course will teach you how</li>
+<li>In the process, you’ll learn to use Git and GitHub, which are great tools even if you are working solo on a project</li>
+<li>Git and GitHub have some incredibly confusing concepts so we’ll use a metaphor throughout this course</li>
+</ul>
+</section>
+
+<section id="animated-video" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="git-github" class="slide level4">
+<h4>Git + GitHub</h4>
+<ul>
+<li>There are a lot of confusing terms and we’ll simplify them</li>
+<li>Why you don’t need to understand internals/all details of git to use it</li>
+</ul>
+</section>
+<section id="why-you-should-learn-to-use-git-and-github" class="slide level4">
+<h4>Why you should learn to use Git and GitHub</h4>
+<ol type="1">
+<li>complete history/backup</li>
+<li>work on code with others efficiently</li>
+<li>best way to do project management for code projects</li>
+</ol>
+</section>
+
+
+<section id="how-the-course-works" class="title-slide slide level2 inverse center">
 <h2>How the Course Works</h2>
-<aside class="notes">
-<p>Tools we’ll use - Covers RStudio and GH Desktop early on, but only GH Desktop later - I’ll put command line equivalents in Learn More sections, but won’t present on them</p>
-<p>Why I use these tools - Lots of uppity people talking about terminal, but Jenny Bryan says: no merit badges for git - For simple git stuff, RStudio is all you need - If you want to do more complicated things, use GHD - GHD lets you do the thing you want without worrying about esoteric terminal commands: https://show.rfor.us/l9F8ZZNp - GHD is actually better per Daniel Sjoberg quote: https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="update-everything" class="slide level2 inverse center">
+<section id="on-camera-1" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+<section id="tools-well-use" class="slide level4">
+<h4>Tools we’ll use</h4>
+<ul>
+<li>Covers RStudio and GH Desktop early on, but only GH Desktop later</li>
+<li>I’ll put command line equivalents in Learn More sections, but won’t present on them</li>
+</ul>
+</section>
+<section id="why-i-use-these-tools" class="slide level4">
+<h4>Why I use these tools</h4>
+<ul>
+<li>Lots of uppity people talking about terminal, but as Jenny Bryan says: <a href="https://happygitwithr.com/git-client#no-one-is-giving-out-git-nerd-merit-badges">no merit badges for git</a></li>
+<li>For simple git stuff, RStudio is all you need</li>
+<li>If you want to do more complicated things, use GHD</li>
+<li>GHD lets you do the thing you want without worrying about esoteric terminal commands: <a href="https://show.rfor.us/l9F8ZZNp" class="uri">https://show.rfor.us/l9F8ZZNp</a></li>
+<li>GHD is actually better per <a href="https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&amp;replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&amp;dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&amp;dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29">Daniel Sjoberg quote</a></li>
+</ul>
+</section>
+
+
+<section id="update-everything" class="title-slide slide level2 inverse center">
 <h2>Update Everything</h2>
-<aside class="notes">
-<p>Video: - architect has to get new pens and paper etc - Or maybe Drafting Tools: Architect’s scale, T-square, compass, protractor, and drafting pencils. https://arc.net/l/quote/dhzdcagw</p>
-<p>Update - R - RStudio</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn" class="slide level2 your-turn center">
+<section id="on-camera-2" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-1" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-1" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Update R</li>
+<li>Update RStudio</li>
+</ul>
+</section>
+
+
+<section id="your-turn" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
-<li class="fragment">Update R</li>
-<li class="fragment">Reinstall packages</li>
-<li class="fragment">Update RStudio</li>
+<li><p>Update R</p></li>
+<li><p>Reinstall packages if necessary</p></li>
+<li><p>Update RStudio</p></li>
 </ol>
-</section></section>
+</section>
+</section>
 <section>
 <section id="git" class="title-slide slide level1 inverse center">
 <h1>Git</h1>
 
 </section>
-<section id="install-git" class="slide level2 inverse center">
+<section id="install-git" class="title-slide slide level2 inverse center">
 <h2>Install Git</h2>
-<aside class="notes">
-<ul>
-<li><p>Video: filing cabinet system set up</p></li>
-<li><p>Install GitHub Desktop</p></li>
-<li><p>Show how to install git by itself if necessary</p></li>
-<li><p>Show git in RStudio</p></li>
-<li><p>Check git version</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-1" class="slide level2 your-turn center">
+<section id="on-camera-3" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-2" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-2" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Install GitHub Desktop</li>
+<li>Show how to install git by itself if necessary</li>
+<li>Show git in RStudio</li>
+<li>Check git version</li>
+</ul>
+</section>
+
+
+<section id="your-turn-1" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
-<li class="fragment">Install GitHub Desktop</li>
-<li class="fragment">Install git separately (only if necessary)</li>
-<li class="fragment">Confirm git installed correctly by checking version using <code>git --version</code> in the terminal</li>
+<li>Install GitHub Desktop</li>
+<li>Install git separately (only if necessary)</li>
+<li>Confirm git installed correctly by checking version using <code>git --version</code> in the terminal</li>
 </ol>
 </section>
-<section id="configure-git" class="slide level2 inverse center">
+
+<section id="configure-git" class="title-slide slide level2 inverse center">
 <h2>Configure Git</h2>
-<aside class="notes">
-<ul>
-<li><p>Video: Get customized sticky notes printed with name and email on them</p></li>
-<li><p>In GHD</p></li>
-<li><p>In RStudio</p></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-2" class="slide level2 your-turn center">
+<section id="on-camera-4" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-3" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-3" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>In GHD</li>
+<li>In RStudio</li>
+</ul>
+</section>
+
+
+<section id="your-turn-2" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
-<li class="fragment">Configure Git by adding a user name and email to your profile using GitHub Desktop</li>
+<li>Configure Git by adding a user name and email to your profile using GitHub Desktop</li>
 </ol>
 </section>
-<section id="create-a-local-git-repository" class="slide level2 inverse center">
+
+<section id="create-a-local-git-repository" class="title-slide slide level2 inverse center">
 <h2>Create a Local Git Repository</h2>
-<aside class="notes">
+
+</section>
+<section id="on-camera-5" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-4" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-4" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="in-rstudio-and-ghd" class="slide level4">
+<h4>In RStudio and GHD</h4>
 <ul>
-<li>Video: Get new filing cabinet to add to office</li>
+<li>When starting new project</li>
+<li>In RStudio, talk about it with usethis as well as when creating a new project</li>
+<li>When creating repo from existing project</li>
 </ul>
-<p>In RStudio and GHD - When starting new project - In RStudio, talk about it with usethis as well as when creating a new project - When creating repo from existing project</p>
-<p>Working directory - Working directory (basically same as repo) (see https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3) - “The working directory is like a work bench it is where you edit your files, add new files and delete files.” - https://arc.net/l/quote/pzezrgof - Working directory becomes a repository once we create local git repo</p>
-<p>Ignoring files - RStudio does this by default; GH Desktop does this if you choose template - Why would you ignore files? - Make sure you don’t include things by accident</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="your-turn-3" class="slide level2 your-turn center">
+<section id="working-directory" class="slide level4">
+<h4>Working directory</h4>
+<ul>
+<li>Working directory (basically same as repo) (see <a href="https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3">here</a>)</li>
+<li>“The working directory is like a work bench it is where you edit your files, add new files and delete files.” - <a href="https://arc.net/l/quote/pzezrgof" class="uri">https://arc.net/l/quote/pzezrgof</a></li>
+<li>Working directory becomes a repository once we create local git repo</li>
+</ul>
+</section>
+<section id="ignoring-files" class="slide level4">
+<h4>Ignoring files</h4>
+<ul>
+<li>RStudio does this by default; GH Desktop does this if you choose template</li>
+<li>Why would you ignore files?</li>
+<li>Make sure you don’t include things by accident</li>
+</ul>
+</section>
+
+
+<section id="your-turn-3" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
-<li class="fragment">Create new Quarto website project in RStudio</li>
-<li class="fragment">Make sure to create git repo while doing creating new project</li>
+<li>Create a new Quarto website project in RStudio</li>
+<li>Make sure to create git repo while doing creating new project</li>
 </ol>
 </section>
-<section id="commits" class="slide level2 inverse center">
+
+<section id="commits" class="title-slide slide level2 inverse center">
 <h2>Commits</h2>
-<aside class="notes">
-<p>Video: - architect works for a while and then decides to add work to filing cabinet. - Staging area: Talk about section of desk as staging area to decide which files to include. - Commit messages = sticky note attached to files that talk about what has changed. - Commit = add things in file folder and attach commit message. - Hash = unique identifier stamped on file folder as it goes through tubes.</p>
-<p>Stage/staging area - Choosing which files to include in repo</p>
-<p>Committing - Commit Message (like email subject line; no more than 50/72 characters): typically in present tense - Commit description (like email body) but rarely used - Make small commits</p>
-<p>Show in GHD/RStudio</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-4" class="slide level2 your-turn center">
+<section id="on-camera-6" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-5" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-5" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Staging area: Talk about section of desk as staging area to decide which files to include.</li>
+<li>Commit messages = sticky note attached to files that talk about what has changed.</li>
+<li>Commit = add things in file folder and attach commit message.</li>
+<li>Hash = unique identifier stamped on file folder as it goes through tubes.</li>
+</ul>
+</section>
+<section id="stagestaging-area" class="slide level4">
+<h4>Stage/staging area</h4>
+<ul>
+<li>Choosing which files to include in repo</li>
+</ul>
+</section>
+<section id="committing" class="slide level4">
+<h4>Committing</h4>
+<ul>
+<li>Commit Message (like email subject line; no more than 50/72 characters): typically in present tense</li>
+<li>Commit description (like email body) but rarely used</li>
+<li>Make small commits</li>
+</ul>
+<p>Show in GHD/RStudio</p>
+</section>
+
+
+<section id="your-turn-4" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
-<li class="fragment">Make changes to website project</li>
-<li class="fragment">Make commit</li>
+<li>Change title of your Quarto website by editing the <code>_quarto.yml</code> file</li>
+</ol>
+<p>Then, in GitHub Desktop or RStudio:</p>
+<ol type="1">
+<li><p>Add the <code>_quarto.yml</code> file in the staging area</p></li>
+<li><p>Add a commit message</p></li>
+<li><p>Make a commit</p></li>
 </ol>
 </section>
-<section id="commit-history" class="slide level2 center">
+
+<section id="commit-history" class="title-slide slide level2 inverse center">
 <h2>Commit History</h2>
-<aside class="notes">
-<p>Video - open up filing cabinet and see history. - Git also gives you the ability to see changes between each commit (diffs).</p>
+
+</section>
+<section id="on-camera-7" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-6" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-6" class="title-slide slide level3 center">
+<h3>On Screen</h3>
 <ul>
 <li>View history of changes</li>
-<li>Diffs in RStudio and GH Desktop</li>
+<li>Diffs in GHD and RStudio</li>
 </ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="your-turn-5" class="slide level2 your-turn center">
+
+
+<section id="your-turn-5" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ul>
-<li class="fragment">View commit history in RStudio and GH Desktop</li>
+<li>View commit history in GitHub Desktop and/or RStudio</li>
 </ul>
-</section></section>
+</section>
+</section>
 <section>
-<section id="github" class="title-slide slide level1 center">
+<section id="github" class="title-slide slide level1 inverse center">
 <h1>GitHub</h1>
 
 </section>
-<section id="github-repositories" class="slide level2 center">
+<section id="github-repositories" class="title-slide slide level2 inverse center">
 <h2>GitHub Repositories</h2>
-<aside class="notes">
-<p>Video - GitHub is like central office where all blueprints is hosted. - This is good as a backup for an individual, but also it enables collaboration.</p>
-<p>David - There are other systems (GitLab etc) - One repo per project in R - Commit history is same on GH as what we saw locally</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-6" class="slide level2 your-turn center">
+<section id="on-camera-8" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-7" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-7" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>There are other systems (GitLab etc)</li>
+<li>One repo per project in R</li>
+<li>Commit history is same on GH as what we saw locally</li>
+</ul>
+</section>
+
+
+<section id="your-turn-6" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<p>Open the GitHub repository for my website project</p>
-<p>Click on commits</p>
-<p>Take a look through the commit history to see how the code changed over time</p>
+<ul>
+<li><p>Open the GitHub repository for my website project</p></li>
+<li><p>Click on commits</p></li>
+<li><p>Take a look through the commit history to see how the code changed over time</p></li>
+</ul>
 </section>
-<section id="connect-to-github" class="slide level2 center">
+
+<section id="connect-to-github" class="title-slide slide level2 inverse center">
 <h2>Connect to GitHub</h2>
-<aside class="notes">
-<p>Video: - Build pneumatic tube that connects desk to central office. - Talk about local vs remote/origin</p>
-<p>David: - Sign up for GH - In GH Desktop, sign into GitHub - In RStudio, do PAT business - Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See https://arc.net/l/quote/aharrxyw</p>
-<p>Local vs remote - Local vs remote/origin (see https://arc.net/l/quote/muqmphgn) - GitHub is your remote</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-7" class="slide level2 your-turn center">
-<h2>Your Turn</h2>
-<p>Connect to GH with both GHD and RStudio</p>
+<section id="on-camera-9" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
 </section>
-<section id="push-repository-from-local-to-remote" class="slide level2 center">
-<h2>Push Repository from Local to Remote</h2>
-<aside class="notes">
-<p>Video: - pneumatic tubes (branch off of main tube connecting office to HQ) connect local repo to remote repo - Initial push happens with all materials going from office to HQ</p>
-<p>Publish repo - In GH Desktop, publish to GH - In RStudio, use <code>usethis::use_github()</code> - Talk about public vs private repos</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
+<section id="animated-video-8" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
 </section>
-<section id="your-turn-8" class="slide level2 your-turn center">
-<h2>Your Turn</h2>
+
+<section id="on-screen-8" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="connect-to-github-1" class="slide level4">
+<h4>Connect to GitHub</h4>
 <ul>
-<li class="fragment">Push website project to GH</li>
+<li>Sign up for GH</li>
+<li>In GH Desktop, sign into GitHub</li>
+<li>In RStudio, do PAT business</li>
+<li>Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See https://arc.net/l/quote/aharrxyw</li>
 </ul>
 </section>
-<section id="pull-repository-from-remote-to-local" class="slide level2 center">
-<h2>Pull Repository from Remote to Local</h2>
-<aside class="notes">
-<p>Video - pneumatic tubes built to connect HQ to office - Initial pull (clone) happens with all materials going from HQ to office</p>
-<p>David - Create new repo on GH and clone it locally</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="your-turn-9" class="slide level2 your-turn center">
-<h2>Your Turn</h2>
+<section id="local-vs-remote" class="slide level4">
+<h4>Local vs remote</h4>
 <ul>
-<li class="fragment">Clone repo to local</li>
+<li>Local vs remote/origin (see https://arc.net/l/quote/muqmphgn)</li>
+<li>GitHub is your remote</li>
 </ul>
 </section>
-<section id="keep-local-and-remote-in-sync" class="slide level2 center">
+
+
+<section id="your-turn-7" class="title-slide slide level2 your-turn center">
+<h2>Your Turn</h2>
+<ul>
+<li>Connect to GitHub using both GitHub Desktop and RStudio</li>
+</ul>
+</section>
+
+<section id="publish-repository-from-local-to-remote" class="title-slide slide level2 inverse center">
+<h2>Publish Repository from Local to Remote</h2>
+
+</section>
+<section id="on-camera-10" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-9" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-9" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>In GH Desktop, publish to GH</li>
+<li>In RStudio, use <code>usethis::use_github()</code></li>
+<li>Talk about public vs private repos</li>
+</ul>
+</section>
+
+
+<section id="your-turn-8" class="title-slide slide level2 your-turn center">
+<h2>Your Turn</h2>
+<ul>
+<li>Publish your website project to GitHub using GitHub Desktop or RStudio</li>
+</ul>
+</section>
+
+<section id="clone-repository-from-remote-to-local" class="title-slide slide level2 inverse center">
+<h2>Clone Repository from Remote to Local</h2>
+
+</section>
+<section id="on-camera-11" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-10" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-10" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Create new repo on GH and clone it locally</li>
+<li>Show how to do it with GHD and RStudio</li>
+</ul>
+</section>
+
+
+<section id="your-turn-9" class="title-slide slide level2 your-turn center">
+<h2>Your Turn</h2>
+<ul>
+<li>Clone my website project</li>
+</ul>
+</section>
+
+<section id="keep-local-and-remote-in-sync" class="title-slide slide level2 center">
 <h2>Keep Local and Remote in Sync</h2>
-<aside class="notes">
-<p>Video - show blueprints going back and forth</p>
-<p>Pushing - Work locally - Commit along way - Push to GH - Reminder about small commits - Talk about how this has all been working by myself, but next section is about collaboration with others</p>
-<p>Pulling - Show it in RStudio + GHD - Fetch vs pull (Pull = fetch + merge) see https://arc.net/l/quote/vsndbbpg</p>
-<p>From here on out, just using GH Desktop</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-10" class="slide level2 your-turn center">
+<section id="on-camera-12" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-11" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-11" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="pushing" class="slide level4">
+<h4>Pushing</h4>
+<ul>
+<li>Work locally</li>
+<li>Commit along way</li>
+<li>Push to GH</li>
+<li>Reminder about small commits</li>
+<li>Talk about how this has all been working by myself, but next section is about collaboration with others</li>
+</ul>
+</section>
+<section id="pulling" class="slide level4">
+<h4>Pulling</h4>
+<ul>
+<li>Show it in RStudio + GHD</li>
+<li>Fetch vs pull (Pull = fetch + merge) see https://arc.net/l/quote/vsndbbpg</li>
+</ul>
+</section>
+
+<section id="on-camera-13" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+<ul>
+<li>This is the last thing we’ll do with RStudio</li>
+<li>From here on out, just using GH Desktop</li>
+</ul>
+</section>
+
+
+<section id="your-turn-10" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ul>
-<li class="fragment"><p>Make commit on local repo</p></li>
-<li class="fragment"><p>Push to GH</p></li>
-<li class="fragment"><p>Do this with RStudio and GHD</p></li>
+<li><p>Make a commit in your local repo</p></li>
+<li><p>Push your commit to GitHub using GitHub Desktop or RStudio</p></li>
 </ul>
-</section></section>
+</section>
+</section>
 <section>
-<section id="collaboration-with-github" class="title-slide slide level1 center">
+<section id="collaboration-with-github" class="title-slide slide level1 inverse center">
 <h1>Collaboration with GitHub</h1>
 
 </section>
-<section id="why-use-github-vs-dropbox-google-drive-box-etc" class="slide level2 center">
-<h2>Why Use GitHub vs Dropbox, Google Drive, Box, etc?</h2>
-<aside class="notes">
-<p>No animated video</p>
-<p>Benefits:</p>
-<p>Backup / able to view history</p>
-<p>Collaboration - With other tools, multiple people can’t work on code at same time - Explain what this would look like for working on blueprint</p>
-<p>Project management built into GH - Issues - Branches/PRs</p>
-<p>Automation - Publish stuff online - Automatically scheduling code to run through GH Actions (like blueprints being printed automatically)</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="why-use-github-for-collaboration" class="title-slide slide level2 inverse center">
+<h2>Why Use GitHub for Collaboration?</h2>
+
 </section>
-<section id="setting-up-github-repositories-for-collaboration" class="slide level2 center">
+<section id="on-camera-14" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-12" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+<p>No animated video</p>
+</section>
+
+<section id="on-screen-12" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="backup-able-to-view-history" class="slide level4">
+<h4>Backup / able to view history</h4>
+</section>
+<section id="collaboration" class="slide level4">
+<h4>Collaboration</h4>
+<ul>
+<li>With other tools, multiple people can’t work on code at same time</li>
+<li>Explain what this would look like for working on blueprint</li>
+</ul>
+</section>
+<section id="project-management-built-into-gh" class="slide level4">
+<h4>Project management built into GH</h4>
+<ul>
+<li>Issues</li>
+<li>Branches/PRs</li>
+</ul>
+</section>
+<section id="automation" class="slide level4">
+<h4>Automation</h4>
+<ul>
+<li>Publish stuff online</li>
+<li>Automatically scheduling code to run through GH Actions (like blueprints being printed automatically)</li>
+</ul>
+</section>
+
+
+<section id="setting-up-github-repositories-for-collaboration" class="title-slide slide level2 inverse center">
 <h2>Setting up GitHub Repositories for Collaboration</h2>
-<aside class="notes">
-<p>No animated video</p>
-<p>David - Personal vs Organization Accounts - Adding People to Your Repo - Forks: https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="project-management-with-github" class="slide level2 center">
+<section id="on-camera-15" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-13" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+<p>No animated video</p>
+</section>
+
+<section id="on-screen-13" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Personal vs Organization Accounts</li>
+<li>Adding People to Your Repo</li>
+<li><a href="https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github">Forks</a></li>
+</ul>
+</section>
+
+
+<section id="project-management-with-github" class="title-slide slide level2 inverse center">
 <h2>Project Management with GitHub</h2>
-<aside class="notes">
-<p>Video: show board where tasks are posted and architects get their tasks each day on arriving to work</p>
-<p>Issues</p>
+
+</section>
+<section id="on-camera-16" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-14" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-14" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="issues" class="slide level4">
+<h4>Issues</h4>
 <ul>
 <li>Reference changes with SHA</li>
 <li>Task lists</li>
 <li>Assigning people</li>
 </ul>
-<p>Organize issues</p>
+</section>
+<section id="organize-issues" class="slide level4">
+<h4>Organize issues</h4>
 <ul>
 <li>Labels for ongoing things</li>
 <li>Milestones for one-time things</li>
 <li>Projects to see all things visually</li>
 </ul>
-<p>Notifications</p>
+</section>
+<section id="notifications" class="slide level4">
+<h4>Notifications</h4>
 <ul>
 <li>Do you want to get emails?</li>
 <li>How to see all notifications on issues/PRs/etc: https://github.com/notifications</li>
 </ul>
-<p>Branches and pull requests</p>
-<ul>
-<li>We’ll come back to</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="your-turn-11" class="slide level2 your-turn center">
+<section id="branches-and-pull-requests" class="slide level4">
+<h4>Branches and pull requests</h4>
+<ul>
+<li>We’ll come back to them</li>
+</ul>
+</section>
+
+
+<section id="your-turn-11" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<ul>
-<li class="fragment"><p>Create issue</p></li>
-<li class="fragment"><p>Solve issue in your code</p></li>
-<li class="fragment"><p>Make commit</p></li>
-<li class="fragment"><p>Reference commit in issue</p></li>
-<li class="fragment"><p>Close issue</p></li>
-</ul>
+<ol type="1">
+<li><p>Create an issue in your GitHub repository</p></li>
+<li><p>Solve the issue by working in your local project</p></li>
+<li><p>Make a commit and push to GitHub</p></li>
+<li><p>Add a comment in your issue, saying you completed the issue</p></li>
+<li><p>In your comment, use the SHA to reference the changes you made</p></li>
+<li><p>Close the issue</p></li>
+</ol>
 </section>
-<section id="branches" class="slide level2 center">
+
+<section id="branches" class="title-slide slide level2 inverse center">
 <h2>Branches</h2>
-<aside class="notes">
-<p>Video: Show architects making copies of blueprints and putting them in different shelves of repo filing cabinet</p>
-<p>Why should you use them</p>
+
+</section>
+<section id="on-camera-17" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-15" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-15" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+<section id="why-should-you-use-them" class="slide level4">
+<h4>Why should you use them</h4>
 <ul>
 <li>Do PRs to get feedback</li>
 <li>Test things and only merge back in if you like what you did</li>
 <li>Test things on live site</li>
 </ul>
-<p>Linking issues to branches</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="your-turn-12" class="slide level2 your-turn center">
+<section id="linking-issues-to-branches" class="slide level4">
+<h4>Linking issues to branches</h4>
+</section>
+
+
+<section id="your-turn-12" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<ul>
-<li class="fragment"><p>Create issue and associated branch</p></li>
-<li class="fragment"><p>Solve issue in your code</p></li>
-<li class="fragment"><p>Make commit</p></li>
-</ul>
+<ol type="1">
+<li><p>Create an issue and associated branch on GitHub</p></li>
+<li><p>Use GitHub Desktop to switch to the branch you created</p></li>
+<li><p>Work in your branch to complete the issue</p></li>
+<li><p>Make a commit in your branch</p></li>
+<li><p>Push your commit to GitHub</p></li>
+<li><p>Make sure you can see the commit in the branch in your GitHub repo</p></li>
+</ol>
 </section>
-<section id="pull-requests" class="slide level2 center">
+
+<section id="pull-requests" class="title-slide slide level2 inverse center">
 <h2>Pull Requests</h2>
-<aside class="notes">
-<p>Video: architect submits work on piece of house and someone else reviews it</p>
-<p>David - Show merging without PR first and explain why it isn’t ideal - Show PR - Dealing with merge conflicts in PRs (say that this will be discussed more in future lesson) - Code reviews - Magic words for closing</p>
-<p>For your turn have people do PR on their own repo</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-13" class="slide level2 your-turn center">
+<section id="on-camera-18" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-16" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-16" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Show merging without PR first and explain why it isn’t ideal</li>
+<li>Show PR</li>
+<li>Dealing with merge conflicts in PRs (say that this will be discussed more in future lesson)</li>
+<li>Code reviews</li>
+<li>Magic words for closing</li>
+</ul>
+</section>
+
+
+<section id="your-turn-13" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ul>
-<li class="fragment"><p>Open PR from branch</p></li>
-<li class="fragment"><p>Review code in PR</p></li>
-<li class="fragment"><p>Merge PR</p></li>
+<li><p>Create a pull request from GitHub Desktop</p></li>
+<li><p>Review the pull request on GitHub</p></li>
+<li><p>Merge your pull request</p></li>
+<li><p>Make sure your GitHub issue is also closed after the pull request is merged</p></li>
 </ul>
-</section></section>
+</section>
+</section>
 <section>
-<section id="common-git-problems-and-solutions" class="title-slide slide level1 center">
+<section id="common-git-problems-and-solutions" class="title-slide slide level1 inverse center">
 <h1>Common Git Problems and Solutions</h1>
 
 </section>
-<section id="cant-pull-from-github" class="slide level2 center">
+<section id="cant-pull-from-github" class="title-slide slide level2 inverse center">
 <h2>Can’t Pull from GitHub</h2>
-<aside class="notes">
-<p>Video: Show architect with work done locally that would be overwritten by pulling</p>
-<p>David - Need to commit changes locally first - Can use stashes: - https://docs.github.com/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop - https://happygitwithr.com/pull-tricky - https://github.com/MikeMcQuaid/GitInPractice/blob/main/03-FilesystemInteractions.adoc#temporarily-stash-some-changes-git-stash - https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning - Can also discard changes in GHD</p>
+
+</section>
+<section id="on-camera-19" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-17" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-17" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Need to commit changes locally first</li>
+<li>Can use stashes:
+<ul>
+<li>https://docs.github.com/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop</li>
+<li>https://happygitwithr.com/pull-tricky</li>
+<li>https://github.com/MikeMcQuaid/GitInPractice/blob/main/03-FilesystemInteractions.adoc#temporarily-stash-some-changes-git-stash</li>
+<li>https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning</li>
+</ul></li>
+<li>Can also discard changes in GHD</li>
+</ul>
 <p>Talk about why using stashes isn’t that great: https://happygitwithr.com/pull-tricky#other-approaches</p>
 <p>This is why branches are helpful</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="your-turn-14" class="slide level2 your-turn center">
+
+
+<section id="your-turn-14" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<p>Make edit to website locally but don’t commit changes</p>
-<p>Make edit to website on GitHub.com and saave it</p>
-<p>Pull from GH and get message about needing to commit changes before pulling</p>
-<p>Pull again, making sure you can successfully bring in the changes from GitHub</p>
+<ol type="1">
+<li><p>Make an edit to website locally but <strong>don’t commit changes</strong></p></li>
+<li><p>Make edit to website on GitHub.com and save it</p></li>
+<li><p>Attempt to pull from GitHub. You should get a message about needing to commit changes before pulling.</p></li>
+<li><p>Commit your local changes</p></li>
+<li><p>Pull again, making sure you can successfully bring in the changes from GitHub</p></li>
+</ol>
 <p>Heads up: you should get a message about a merge conflict. We’ll deal with this in the next lesson!</p>
 </section>
-<section id="merge-conflicts" class="slide level2 center">
+
+<section id="merge-conflicts" class="title-slide slide level2 inverse center">
 <h2>Merge Conflicts</h2>
-<aside class="notes">
-<p>Video: show conflict where two people edit same part of blueprint file</p>
+
+</section>
+<section id="on-camera-20" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-18" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-18" class="title-slide slide level3 center">
+<h3>On Screen</h3>
 <p>Sometimes you have conflicts with what someone else did</p>
 <p>How to deal:</p>
 <ul>
@@ -857,77 +1125,98 @@
 <blockquote>
 <p>Resolve Conflicts Locally: When you resolve conflicts on DevOps, GitHub or GitLab, you commit before you test. When you resolve conflicts locally, you commit after you test. This helps you avoid unexpected and unintentional breakage in the code.</p>
 </blockquote>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="your-turn-15" class="slide level2 your-turn center">
+
+
+<section id="your-turn-15" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<p>You should have a merge conflict from last lesson</p>
-<p>Fix merge conflict using RStudio, GHD, or GitHub.com</p>
-<p>Make a commit if necessary</p>
-<p>Push code to GitHub</p>
+<ol type="1">
+<li><p>You should have a merge conflict from last lesson</p></li>
+<li><p>Fix merge conflict using GitHub Desktop, RStudio, or GitHub.com</p></li>
+<li><p>Make a commit</p></li>
+<li><p>Push your code to GitHub</p></li>
+</ol>
 </section>
-<section id="cant-push-code-to-github" class="slide level2 center">
+
+<section id="cant-push-code-to-github" class="title-slide slide level2 inverse center">
 <h2>Can’t Push Code to GitHub</h2>
-<aside class="notes">
-<p>Video: Show architect who doesn’t have latest code pulled and why he can’t push</p>
-<p>Have to pull first</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-16" class="slide level2 your-turn center">
+<section id="on-camera-21" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-19" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-19" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+
+</section>
+
+
+<section id="your-turn-16" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<p>Make an edit on on GitHub</p>
-<p>Make an edit locally</p>
-<p>Attempt to push your changes from RStudio to GitHub (it should fail)</p>
-<p>Pull in changes from GitHub</p>
-<p>Deal with any merge conflicts</p>
-<p>Push your changes from RStudio to GitHub</p>
+<ol type="1">
+<li><p>Make an edit on GitHub</p></li>
+<li><p>Make an edit locally</p></li>
+<li><p>Attempt to push your changes from RStudio to GitHub (it should fail)</p></li>
+<li><p>Pull in changes from GitHub</p></li>
+<li><p>Deal with any merge conflicts</p></li>
+<li><p>Push your changes to GitHub</p></li>
+</ol>
 </section>
-<section id="use-gitignore-to-avoid-conflicts" class="slide level2 center">
+
+<section id="use-gitignore-to-avoid-conflicts" class="title-slide slide level2 inverse center">
 <h2>Use gitignore to Avoid Conflicts</h2>
-<aside class="notes">
-<p>Video: - Architect has cheatsheet of unit conversions, but never wants this to be committed so adds it to gitignore - Or has something proprietary and wants to ensure it won’t be posted by accident - Or has files that are created from source code that will likely cause merge conflicts so doesn’t want them tracked</p>
-<p>David - Ignore things you never want added (better than unchecking them every commit) - Ignore sensitive data (see lesson below) - Ignore files that may be commonly overwritten</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="your-turn-17" class="slide level2 your-turn center">
+<section id="on-camera-22" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-20" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-20" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Ignore things you never want added (better than unchecking them every commit)</li>
+<li>Ignore sensitive data (see lesson below)</li>
+<li>Ignore files that may be commonly overwritten</li>
+</ul>
+</section>
+
+
+<section id="your-turn-17" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<p>Add _site to gitignore</p>
+<ol type="1">
+<li>Add <code>_site</code> to gitignore</li>
+</ol>
 </section>
-<section id="best-practices-for-using-git-and-github" class="slide level2 center">
+
+<section id="best-practices-for-using-git-and-github" class="title-slide slide level2 inverse center">
 <h2>Best Practices for Using Git and GitHub</h2>
-<aside class="notes">
-<p>No animated video</p>
-<p>Always pull before pushing</p>
+
+</section>
+<section id="on-camera-23" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-21" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-21" class="title-slide slide level3 center">
+<h3>On Screen</h3>
 <p>Make small commits</p>
 <ul>
 <li>Nick Hodges quote</li>
@@ -936,27 +1225,31 @@
 <p>Push early and often</p>
 <p>Use branches</p>
 <p>If necessary, burn it all Down: https://happygitwithr.com/burn</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
+</section>
+
+</section>
 <section>
-<section id="common-git-techniques" class="title-slide slide level1 center">
+<section id="common-git-techniques" class="title-slide slide level1 inverse center">
 <h1>Common Git Techniques</h1>
 
 </section>
-<section id="how-to-work-on-multiple-computers-with-git-and-github" class="slide level2 center">
+<section id="how-to-work-on-multiple-computers-with-git-and-github" class="title-slide slide level2 inverse center">
 <h2>How to Work on Multiple Computers with Git and GitHub</h2>
+
+</section>
+<section id="on-camera-24" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-22" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-22" class="title-slide slide level3 center">
+<h3>On Screen</h3>
 <aside class="notes">
-<p>Video: architect working at office and at home</p>
 <p>Video for Hannah: https://show.rfor.us/Q94ng65p</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -970,63 +1263,80 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="how-to-avoid-putting-sensitive-information-on-github" class="slide level2 center">
+
+
+<section id="how-to-avoid-putting-sensitive-information-on-github" class="title-slide slide level2 inverse center">
 <h2>How to Avoid Putting Sensitive Information on GitHub</h2>
-<aside class="notes">
-<ul>
-<li>Video: special proprietary paint color used in blueprints that you don’t want on GitHub so you add it to gitignore</li>
-</ul>
+
+</section>
+<section id="on-camera-25" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-23" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-23" class="title-slide slide level3 center">
+<h3>On Screen</h3>
 <p>Options: - gitignore files - Use special location on network drive etc in code that only internal people can access - Put data in some other tool and access it with a package like googlesheets4 - Use environment variables</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="continuous-deployment" class="slide level2 center">
+
+
+<section id="continuous-deployment" class="title-slide slide level2 center">
 <h2>Continuous Deployment</h2>
-<aside class="notes">
-<p>Video: Architect makes builder version of blueprints locally and then pushes them to Netlify</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
-<section id="use-github-actions-to-run-code-automatically" class="slide level2 center">
+<section id="on-camera-26" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-24" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-24" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Unignore <code>_site</code></li>
+<li>Show using GH Pages</li>
+<li>Show using Netlify</li>
+</ul>
+</section>
+
+
+<section id="use-github-actions-to-run-code-automatically" class="title-slide slide level2 inverse center">
 <h2>Use GitHub Actions to Run Code Automatically</h2>
-<aside class="notes">
-<p>Video: Blueprints for builder get built each time there is a commit (or on a schedule)</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
+
+</section>
+<section id="on-camera-27" class="title-slide slide level3 center">
+<h3>On Camera</h3>
+
+</section>
+
+<section id="animated-video-25" class="title-slide slide level3 center">
+<h3>Animated Video</h3>
+
+</section>
+
+<section id="on-screen-25" class="title-slide slide level3 center">
+<h3>On Screen</h3>
+<ul>
+<li>Set up GH Action</li>
+</ul>
+</section>
+
+</section>
 <section>
-<section id="wrapping-up" class="title-slide slide level1 center">
+<section id="wrapping-up" class="title-slide slide level1 inverse center">
 <h1>Wrapping Up</h1>
 
 </section>
-<section id="a-git-and-github-workflow-in-action" class="slide level2 center">
+<section id="a-git-and-github-workflow-in-action" class="title-slide slide level2 inverse center">
 <h2>A Git and GitHub Workflow in Action</h2>
 <aside class="notes">
 <p>Video: - show humming office with people working on issues in branches, submitting PRs, etc. - Redo initial video but add in specific git language.</p>
@@ -1042,7 +1352,8 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="wrapping-up-using-git-and-github-with-r" class="slide level2 center">
+
+<section id="wrapping-up-using-git-and-github-with-r" class="title-slide slide level2 inverse center">
 <h2>Wrapping up Using Git and GitHub with R</h2>
 <aside class="notes">
 <p>Ask for testimonials</p>
@@ -1062,7 +1373,8 @@
 
 </div>
 </div>
-</section></section>
+</section>
+</section>
     </div>
   </div>
 
@@ -1143,7 +1455,7 @@
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,

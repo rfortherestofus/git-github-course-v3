@@ -94,13 +94,13 @@ This lesson shows how to connect your local system to GitHub.
 
 The animated video should show the creation of some sort of pneumatic tube system (though maybe this isn't great because you can't put a whole file folder in it; perhaps it could be a factory line-style system that file folders go on; I'm open to your ideas here). Whatever system we use, the video should show it being built to connect the architect's office to HQ.
 
-## Push Repository from Local to Remote
+## Publish Repository from Local to Remote
 
 This lesson shows how to push code that you create locally to the remote (i.e. GitHub).
 
 The animated video should show how the architect publishes a copy of all of their work on the project to HQ using the system set up in the previous lesson. One thing to note here is that pushing code to GitHub involves making a copy of it, as you still have the code locally as well. I wonder if we maybe show the blueprints being copied on an old-school copying machine first before they get sent to HQ. 
 
-## Pull Repository from Remote to Local
+## Clone Repository from Remote to Local
 
 This lesson shows the opposite of the last lesson: how to pull down code from a GitHub repository to the local system.
 
@@ -116,7 +116,7 @@ The terms used to talk about this process are **push** (local to remote) and **p
 
 Up to this point, we've showed how to use Git and GitHub as an individual. This section of the course shows how to use them for collaboration. 
 
-## Why Use GitHub vs Dropbox, Google Drive, Box, etc?
+## Why Use GitHub for Collaboration?
 
 This video talks about reasons why you'd want to use GitHub vs Dropbox, Google Drive, Box, etc. 
 
@@ -186,11 +186,9 @@ The final section covers some common techniques that I've seen people ask about.
 
 ## How to Work on Multiple Computers with Git and GitHub
 
-::: {.notes}
-Video: architect working at office and at home
+In this lesson, I talk about how to use git and GitHub to work on multiple computers (e.g. one at home and one at the office). 
 
-Video for Hannah: https://show.rfor.us/Q94ng65p
-:::
+For the animated video, I think we could show the architect working at the office and then going home and wanting to work a bit at night. In the video, we could show how you can set up a pneumatic tube system to connect from HQ to home as well as the system that connects office to HQ.
 
 ## How to Avoid Putting Sensitive Information on GitHub
 
