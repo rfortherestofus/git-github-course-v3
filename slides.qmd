@@ -21,26 +21,21 @@ title-slide-attributes:
 
 # Introduction to Using Git and GitHub with R {.inverse}
 
-## What is Git? {.inverse}
+## Welcome to Using Git and GitHub with R {.inverse}
 
-### On Camera
+### On camera
 
 - If you've used R for a while, you've probably wondered how to work with others
 - This course will teach you how
 - In the process, you'll learn to use Git and GitHub, which are great tools even if you are working solo on a project
 - Git and GitHub have some incredibly confusing concepts so we'll use a metaphor throughout this course
 
-### Animated Video
-
-
-### On Screen
-
-#### Git + GitHub
+### Git + GitHub
 
 - There are a lot of confusing terms and we'll simplify them
 - Why you don't need to understand internals/all details of git to use it
 
-#### Why you should learn to use Git and GitHub
+### Why you should learn to use Git and GitHub
 
 1. complete history/backup
 2. work on code with others efficiently
@@ -53,7 +48,7 @@ title-slide-attributes:
 #### Tools we'll use
 
 - Covers RStudio and GH Desktop early on, but only GH Desktop later
-- I'll put command line equivalents in Learn More sections, but won't present on them
+- I'll put links to command line equivalents in Learn More sections, but won't present on them
 
 #### Why I use these tools
 

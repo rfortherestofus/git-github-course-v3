@@ -61,12 +61,16 @@ $code-block-bg: #F3F4F6;
 }
 
 // title slide
+#title-slide > h1,
 h1.title {
   color: $body-bg;
   font-size: $title-h1-font-size;
+  line-height: 1;
   letter-spacing: -2px;
   font-weight: 700;
 }
+
+
 
 h2.title,
 h3.title {

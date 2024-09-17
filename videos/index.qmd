@@ -23,9 +23,9 @@ The section below has all of the lessons and associated videos. FYI, first-level
 
 ![](v3.jpeg)
 
-# Introduction to Using Git and GitHub with R 
+# Getting Started with Git and GitHub with R 
 
-## What is Git? 
+## Welcome to Using Git and GitHub with R
 
 Animated video will show overall architect/blueprint metaphor. Let's wait to work on it until the very end.
 
