@@ -76,11 +76,9 @@ title-slide-attributes:
 
 ## Your Turn {.your-turn} 
 
-1. Update R
-
-1. Reinstall packages if necessary
-
-1. Update RStudio
+1. Update R.
+1. Reinstall packages if necessary.
+1. Update RStudio.
 
 # Git {.inverse}
 
@@ -99,9 +97,9 @@ title-slide-attributes:
 
 ## Your Turn {.your-turn}
 
-1. Install GitHub Desktop
-1. Install git separately (only if necessary)
-1. Confirm git installed correctly by checking version using `git --version` in the terminal
+1. Install GitHub Desktop.
+1. Install git separately (only if necessary).
+1. Confirm git installed correctly by checking version using `git --version` in the terminal.
 
 ## Configure Git {.inverse}
 
@@ -117,7 +115,7 @@ title-slide-attributes:
 
 ## Your Turn {.your-turn}
 
-1. Configure Git by adding a user name and email to your profile using GitHub Desktop
+1. Configure Git by adding a user name and email to your profile using GitHub Desktop.
 
 ## Create a Local Git Repository {.inverse}
 
@@ -144,11 +142,12 @@ title-slide-attributes:
 - RStudio does this by default; GH Desktop does this if you choose template
 - Why would you ignore files?
 - Make sure you don't include things by accident
+- I'll show more about this in later lesson
 
 ## Your Turn {.your-turn}
 
-1. Create a new Quarto website project in RStudio
-1. Make sure to create git repo while doing creating new project
+1. Create a new Quarto website project in RStudio.
+1. Make sure to create git repo while doing creating new project.
 
 ## Commits {.inverse}
 
@@ -178,15 +177,13 @@ Show in GHD/RStudio
 
 ## Your Turn {.your-turn}
 
-1. Change title of your Quarto website by editing the `_quarto.yml` file
+1. Change title of your Quarto website by editing the `_quarto.yml` file.
 
 Then, in GitHub Desktop or RStudio:
 
-1. Add the `_quarto.yml` file in the staging area
-
-1. Add a commit message
-
-1. Make a commit
+1. Add the `_quarto.yml` file in the staging area.
+1. Add a commit message.
+1. Make a commit.
 
 ## Commit History {.inverse}
 
@@ -201,7 +198,7 @@ Then, in GitHub Desktop or RStudio:
 
 ## Your Turn {.your-turn}
 
-- View commit history in GitHub Desktop and/or RStudio
+- View commit history in GitHub Desktop and/or RStudio.
 
 # GitHub {.inverse}
 
@@ -219,11 +216,9 @@ Then, in GitHub Desktop or RStudio:
 
 ## Your Turn {.your-turn}
 
-- Open the GitHub repository for my website project
-
-- Click on commits
-
-- Take a look through the commit history to see how the code changed over time
+- Open the GitHub repository for my website project.
+- Click on commits.
+- Take a look through the commit history to see how the code changed over time.
 
 ## Connect to GitHub {.inverse}
 
@@ -238,16 +233,16 @@ Then, in GitHub Desktop or RStudio:
 - Sign up for GH
 - In GH Desktop, sign into GitHub
 - In RStudio, do PAT business
-- Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See https://arc.net/l/quote/aharrxyw
+- Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See <https://arc.net/l/quote/aharrxyw>
 
 #### Local vs remote
 
-- Local vs remote/origin (see https://arc.net/l/quote/muqmphgn)
+- Local vs remote/origin (see <https://arc.net/l/quote/muqmphgn>)
 - GitHub is your remote
 
 ## Your Turn {.your-turn}
 
-- Connect to GitHub using both GitHub Desktop and RStudio
+- Connect to GitHub using both GitHub Desktop and RStudio.
 
 ## Publish Repository from Local to Remote {.inverse}
 
@@ -263,7 +258,7 @@ Then, in GitHub Desktop or RStudio:
 
 ## Your Turn {.your-turn}
 
-- Publish your website project to GitHub using GitHub Desktop or RStudio
+- Publish your website project to GitHub using GitHub Desktop or RStudio.
 
 ## Clone Repository from Remote to Local {.inverse}
 
@@ -278,9 +273,9 @@ Then, in GitHub Desktop or RStudio:
 
 ## Your Turn {.your-turn}
 
-- Clone my website project
+- Clone my website project.
 
-## Keep Local and Remote in Sync
+## Keep Local and Remote in Sync {.inverse}
 
 ### On Camera
 
@@ -294,7 +289,6 @@ Then, in GitHub Desktop or RStudio:
 - Commit along way
 - Push to GH
 - Reminder about small commits
-- Talk about how this has all been working by myself, but next section is about collaboration with others
 
 #### Pulling
 
@@ -304,13 +298,13 @@ Then, in GitHub Desktop or RStudio:
 ### On Camera
 
 - This is the last thing we'll do with RStudio
+- Talk about how this has all been working by myself, but next section is about collaboration with others
 - From here on out, just using GH Desktop
 
 ## Your Turn {.your-turn}
 
-- Make a commit in your local repo
-
-- Push your commit to GitHub using GitHub Desktop or RStudio
+- Make a commit in your local repo.
+- Push your commit to GitHub using GitHub Desktop or RStudio.
 
 # Collaboration with GitHub {.inverse}
 
@@ -320,7 +314,7 @@ Then, in GitHub Desktop or RStudio:
 
 ### Animated Video
 
-No animated video
+No animated video, but maybe show animated pieces along the way as I talk. Do this after I've done everything else since it will incorporate elements from other videos.
 
 ### On Screen
 
@@ -341,7 +335,7 @@ No animated video
 - Publish stuff online
 - Automatically scheduling code to run through GH Actions (like blueprints being printed automatically)
 
-## Setting up GitHub Repositories for Collaboration {.inverse}
+## Set up GitHub Repositories for Collaboration {.inverse}
 
 ### On Camera
 
@@ -378,6 +372,7 @@ No animated video
 #### Notifications
 
 - Do you want to get emails?
+- You can respond to emails to post in GH issues
 - How to see all notifications on issues/PRs/etc: https://github.com/notifications
 
 #### Branches and pull requests
@@ -386,17 +381,12 @@ No animated video
 
 ## Your Turn {.your-turn}
 
-1. Create an issue in your GitHub repository
-
-1. Solve the issue by working in your local project
-
-1. Make a commit and push to GitHub
-
-1. Add a comment in your issue, saying you completed the issue
-
-1. In your comment, use the SHA to reference the changes you made
-
-1. Close the issue
+1. Create an issue in your GitHub repository.
+1. Solve the issue by working in your local project.
+1. Make a commit and push to GitHub.
+1. Add a comment in your issue, saying you completed the issue.
+1. In your comment, use the SHA to reference the changes you made.
+1. Close the issue.
 
 ## Branches {.inverse}
 
@@ -416,17 +406,12 @@ No animated video
 
 ## Your Turn {.your-turn}
 
-1. Create an issue and associated branch on GitHub
-
-1. Use GitHub Desktop to switch to the branch you created
-
-1. Work in your branch to complete the issue
-
-1. Make a commit in your branch
-
-1. Push your commit to GitHub
-
-1. Make sure you can see the commit in the branch in your GitHub repo
+1. Create an issue and linked branch on GitHub.
+1. Use GitHub Desktop to switch to the branch you created.
+1. Work in your branch to complete the issue.
+1. Make a commit in your branch.
+1. Push your commit to GitHub.
+1. Make sure you can see the commit in the branch in your GitHub repo.
 
 ## Pull Requests {.inverse}
 
@@ -436,7 +421,7 @@ No animated video
 
 ### On Screen
 
-- Show merging without PR first and explain why it isn't ideal 
+- Show merging without PR first and explain why it isn't ideal (use materials from previous course to show Alison Hill's tweet) 
 - Show PR
 - Dealing with merge conflicts in PRs (say that this will be discussed more in future lesson)
 - Code reviews
@@ -444,13 +429,10 @@ No animated video
 
 ## Your Turn {.your-turn}
 
-- Create a pull request from GitHub Desktop
-
-- Review the pull request on GitHub
-
-- Merge your pull request
-
-- Make sure your GitHub issue is also closed after the pull request is merged
+- Create a pull request from GitHub Desktop.
+- Review the pull request on GitHub.
+- Merge your pull request.
+- Make sure your GitHub issue is also closed after the pull request is merged.
 
 # Common Git Problems and Solutions {.inverse}
 
@@ -463,6 +445,9 @@ No animated video
 ### On Screen
 
 - Need to commit changes locally first
+
+#### Stashes etc
+
 - Can use stashes: 
   - https://docs.github.com/en/desktop/making-changes-in-a-branch/stashing-changes-in-github-desktop
   - https://happygitwithr.com/pull-tricky
@@ -476,17 +461,15 @@ This is why branches are helpful
 
 ## Your Turn {.your-turn}
 
-1. Make an edit to website locally but **don't commit changes**
-
-1. Make edit to website on GitHub.com and save it
-
+1. Make an edit to the `index.qmd` file on your website project locally but **don't commit changes**.
+1. Make edit to `index.qmd` file on GitHub.com and save it.
 1. Attempt to pull from GitHub. You should get a message about needing to commit changes before pulling.
+1. Commit your local changes.
+1. Pull again, making sure you can successfully bring in the changes from GitHub.
 
-1. Commit your local changes
-
-1. Pull again, making sure you can successfully bring in the changes from GitHub
-
+::: {.notes}
 Heads up: you should get a message about a merge conflict. We’ll deal with this in the next lesson!
+:::
 
 ## Merge Conflicts {.inverse}
 
@@ -496,30 +479,38 @@ Heads up: you should get a message about a merge conflict. We’ll deal with thi
 
 ### On Screen
 
-Sometimes you have conflicts with what someone else did
+#### Merge conflict markers etc
 
-How to deal:
+Show them
+
+#### How to deal
 
 - Deal with them in text editor locally
-- Use GHD to deal with them
+- Use GHD to deal with them by selecting which version to keep
 - Deal with them on GitHub.com
-- Show them when working in main branch and with PRs
+- Show them when working in main branch
 
-In PRs, update branch from main periodically in order to not get too far behind and avoid merge conflicts when submitting PR
+#### How to deal
 
 From Deepansh Khurana PPT:
 
-> Resolve Conflicts Locally: When you resolve conflicts on DevOps, GitHub or GitLab, you commit before you test. When you resolve conflicts locally, you commit after you test. This helps you avoid unexpected and unintentional breakage in the code.
+Resolve Conflicts Locally: When you resolve conflicts on DevOps, GitHub or GitLab, you commit before you test. When you resolve conflicts locally, you commit after you test. This helps you avoid unexpected and unintentional breakage in the code.
+
+#### Merge conflicts in PRs
+
+- Show them when working with PRs
+
+#### Update branch from main
+
+In PRs, update branch from main periodically in order to not get too far behind and avoid merge conflicts when submitting PR
 
 ## Your Turn {.your-turn}
 
-1. You should have a merge conflict from last lesson
+You should have a merge conflict from last lesson.
 
-1. Fix merge conflict using GitHub Desktop, RStudio, or GitHub.com
-
-1. Make a commit
-
-1. Push your code to GitHub
+1. Fix merge conflict using GitHub Desktop, RStudio, or GitHub.com.
+1. Make a commit.
+1. Push your code to GitHub.
 
 ## Can't Push Code to GitHub {.inverse}
 
@@ -531,19 +522,14 @@ From Deepansh Khurana PPT:
 
 ## Your Turn {.your-turn}
 
-1. Make an edit on GitHub
+1. Make an edit on GitHub.
+1. Make an edit locally.
+1. Attempt to push your changes from RStudio to GitHub (it should fail).
+1. Pull in changes from GitHub.
+1. Deal with any merge conflicts.
+1. Push your changes to GitHub.
 
-1. Make an edit locally
-
-1. Attempt to push your changes from RStudio to GitHub (it should fail)
-
-1. Pull in changes from GitHub
-
-1. Deal with any merge conflicts
-
-1. Push your changes to GitHub
-
-## Use gitignore to Avoid Conflicts {.inverse}
+## Use gitignore to Keep Files Off of GitHub {.inverse}
 
 ### On Camera
 
@@ -557,7 +543,7 @@ From Deepansh Khurana PPT:
 
 ## Your Turn {.your-turn}
 
-1. Add `_site` to gitignore
+1. Add `_site` to gitignore.
 
 ## Best Practices for Using Git and GitHub {.inverse}
 
@@ -588,6 +574,8 @@ If necessary, burn it all Down: https://happygitwithr.com/burn
 
 ### On Screen
 
+- Show working on Mac at work and Windows at home
+
 ::: {.notes}
 Video for Hannah: https://show.rfor.us/Q94ng65p
 :::
@@ -601,12 +589,13 @@ Video for Hannah: https://show.rfor.us/Q94ng65p
 ### On Screen
 
 Options:
+
 - gitignore files
 - Use special location on network drive etc in code that only internal people can access
 - Put data in some other tool and access it with a package like googlesheets4
 - Use environment variables
 
-## Continuous Deployment 
+## Continuous Deployment {.inverse}
 
 ### On Camera
 

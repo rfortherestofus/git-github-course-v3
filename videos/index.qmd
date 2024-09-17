@@ -122,7 +122,7 @@ This video talks about reasons why you'd want to use GitHub vs Dropbox, Google D
 
 No animated video needed.
 
-## Setting up GitHub Repositories for Collaboration
+## Set up GitHub Repositories for Collaboration
 
 This video talks about adding other users to GitHub repositories so they can collaborate on them.
 
@@ -168,7 +168,7 @@ This lesson shows another common problem: not being able to push to GitHub. This
 
 In the animated video, I imagine one architect has done work on blueprints, but hasn't yet pulled others' work from HQ. She gets stuck and then realizes she has to pull first and then push. 
 
-## Use gitignore to Avoid Conflicts
+## Use gitignore to Keep Files Off of GitHub
 
 This lesson talks about using what's called gitignore to tell GitHub which files to never include in the GitHub repo. This is often things like sensitive data (covered in a lesson below) or files that are created automatically. 
 
