@@ -7,7 +7,7 @@ format:
     slide-number: true
     show-slide-number: print
     center: false
-    incremental: false
+    incremental: true
     auto-animate: true
     slide-level: 4
 execute: 
@@ -23,17 +23,24 @@ title-slide-attributes:
 
 ## Welcome to Using Git and GitHub with R {.inverse}
 
-### On camera
+### Intro
 
 - If you've used R for a while, you've probably wondered how to work with others
 - This course will teach you how
 - In the process, you'll learn to use Git and GitHub, which are great tools even if you are working solo on a project
-- Git and GitHub have some incredibly confusing concepts so we'll use a metaphor throughout this course
+- Git and GitHub have some incredibly confusing concepts but you don't need to understand internals/all details of git to use it
+- In this course you'll be introduced to the concepts through animated videos
 
-### Git + GitHub
+### Discuss Metaphor Video
 
-- There are a lot of confusing terms and we'll simplify them
-- Why you don't need to understand internals/all details of git to use it
+- TidyBuild Studios
+- Group of architects working together to create blueprints for a new housing development
+- They use workflow that mirrors the git + GitHub workflow
+- We'll use metaphors in the animated videos to make abstract git concepts more concrete
+
+### Animated Video
+
+Animated video will show overall architect/blueprint metaphor. Let's wait to work on it until the very end.
 
 ### Why you should learn to use Git and GitHub
 
@@ -45,6 +52,14 @@ title-slide-attributes:
 
 ### On Camera
 
+#### Lesson structure
+
+- I'll introduce concept
+- Use animated video to see our friends at TidyBuild Studios do same thing
+- I'll demonstrate concept in GitHub Desktop and RStudio
+- Your Turn
+- Learn More section
+
 #### Tools we'll use
 
 - Covers RStudio and GH Desktop early on, but only GH Desktop later
@@ -52,17 +67,19 @@ title-slide-attributes:
 
 #### Why I use these tools
 
-- Lots of uppity people talking about terminal, but as Jenny Bryan says: [no merit badges for git](https://happygitwithr.com/git-client#no-one-is-giving-out-git-nerd-merit-badges)
 - For simple git stuff, RStudio is all you need
 - If you want to do more complicated things, use GHD
 - GHD lets you do the thing you want without worrying about esoteric terminal commands: <https://show.rfor.us/l9F8ZZNp>
 - GHD is actually better per [Daniel Sjoberg quote](https://www.linkedin.com/feed/update/urn:li:activity:7238979946767900672?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7238998663769812992%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7238979946767900672%2C7239042170224058368%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287238998663769812992%2Curn%3Ali%3Aactivity%3A7238979946767900672%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287239042170224058368%2Curn%3Ali%3Aactivity%3A7238979946767900672%29)  
+- Lots of uppity people talking about terminal, but as Jenny Bryan says: [no merit badges for git](https://happygitwithr.com/git-client#no-one-is-giving-out-git-nerd-merit-badges)
 
 ## Update Everything {.inverse}
 
 ### On Camera
 
 ### Animated Video
+
+Animated video will show architect getting new tools (pens, paper, compass, protractor, drafting board, etc) before she actually starts working on blueprints.
 
 ### On Screen
 
@@ -72,8 +89,8 @@ title-slide-attributes:
 ## Your Turn {.your-turn} 
 
 1. Update R.
-1. Reinstall packages if necessary.
 1. Update RStudio.
+1. Reinstall packages if necessary.
 
 # Git {.inverse}
 

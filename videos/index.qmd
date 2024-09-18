@@ -9,7 +9,7 @@ format:
 # Overall Notes
 
 - Please make architect in initial section a woman (to the degree that gender is visible)
-- We need a name for the architecture company. I was thinking maybe Rchitects Incorporated, but I'm open to other ideas.
+- I'm using the name TidyBuild Studios for the architecture firm.
 
 Here are a few links you might find useful: 
 
@@ -28,6 +28,8 @@ The section below has all of the lessons and associated videos. FYI, first-level
 ## Welcome to Using Git and GitHub with R
 
 Animated video will show overall architect/blueprint metaphor. Let's wait to work on it until the very end.
+
+[Descript link](https://share.descript.com/view/2S5QJNPuKEO)
 
 ## How the Course Works 
 
