@@ -33,9 +33,13 @@ Animated video will show overall architect/blueprint metaphor. Let's wait to wor
 
 ## How the Course Works 
 
-No animated video
+[Descript link](https://share.descript.com/view/uafLoPFNEtM)
+
+We'll probably use existing portions of other animated videos when I talk about the animated videos in lessons.
 
 ## Update Everything 
+
+[Descript link](https://share.descript.com/view/tw8mbh0rMVN)
 
 The idea of this lesson is that everything should be updated before you start working with git. 
 
