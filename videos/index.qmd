@@ -126,13 +126,13 @@ Up to this point, we've showed how to use Git and GitHub as an individual. This 
 
 This video talks about reasons why you'd want to use GitHub vs Dropbox, Google Drive, Box, etc. 
 
-No animated video needed.
+No animated video, but maybe show animated pieces along the way as I talk. Do this after I've done everything else since it will incorporate elements from other videos.
 
 ## Set up GitHub Repositories for Collaboration
 
 This video talks about adding other users to GitHub repositories so they can collaborate on them.
 
-No animated video needed.
+For the animated video, I imagine architects in a meeting being assigned to a project and then getting filing cabinets rolled into their offices. 
 
 ## Project Management with GitHub
 

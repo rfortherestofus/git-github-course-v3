@@ -100,6 +100,8 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 
 ### Animated Video
 
+The animated video will show a portion of the architect's office being cleared out in order to make space for filing cabinets, which will be added in the Create a Local Git Repository lesson below.
+
 ### On Screen
 
 - Install GitHub Desktop
@@ -119,6 +121,7 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 
 ### Animated Video
 
+Animated video will show architect getting customized sticky notes printed with her name and email on them. The sticky notes will be used later on in the commits video. 
 
 ### On Screen
 
@@ -135,6 +138,8 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 
 ### Animated Video
 
+Animated video will show a filing cabinet being set up in the architect's. It should be a three-drawer cabinet (we'll use one drawer early on in the course, but later lessons will use multiple drawers when talking about branches). 
+
 ### On Screen
 
 #### In RStudio and GHD
@@ -142,12 +147,6 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 - When starting new project
 - In RStudio, talk about it with usethis as well as when creating a new project
 - When creating repo from existing project
-
-#### Working directory
-
-- Working directory (basically same as repo) (see [here](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3))
-- "The working directory is like a work bench it is where you edit your files, add new files and delete files." - <https://arc.net/l/quote/pzezrgof>
-- Working directory becomes a repository once we create local git repo
 
 #### Ignoring files
 
@@ -159,7 +158,7 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 ## Your Turn {.your-turn}
 
 1. Create a new Quarto website project in RStudio.
-1. Make sure to create git repo while doing creating new project.
+1. Make sure to create a git repo while creating your project.
 
 ## Commits {.inverse}
 
@@ -167,8 +166,17 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 
 ### Animated Video
 
+Animated video will show the architect working for a while on their blueprint and then deciding it's time to save their work (i.e. make a commit). 
 
 ### On Screen
+
+#### Working directory
+
+- Working directory (basically same as repo) (see [here](https://medium.com/tech-journey-with-anna/git-question-what-is-the-difference-between-the-working-directory-aka-workspace-and-the-eeee15b7e4b3))
+- "The working directory is like a work bench it is where you edit your files, add new files and delete files." - <https://arc.net/l/quote/pzezrgof>
+- Working directory becomes a repository once we create local git repo
+
+#### Other Terms
 
 - Staging area: Talk about section of desk as staging area to decide which files to include. 
 - Commit messages = sticky note attached to files that talk about what has changed. 
@@ -176,6 +184,7 @@ Animated video will show architect getting new tools (pens, paper, compass, prot
 - Hash = unique identifier stamped on file folder as it goes through tubes.
 
 #### Stage/staging area
+
 - Choosing which files to include in repo
 
 #### Committing
@@ -189,7 +198,9 @@ Show in GHD/RStudio
 
 ## Your Turn {.your-turn}
 
-1. Change title of your Quarto website by editing the `_quarto.yml` file.
+1. Change the title of your Quarto website by editing the `_quarto.yml` file.
+
+. . .
 
 Then, in GitHub Desktop or RStudio:
 
@@ -202,6 +213,8 @@ Then, in GitHub Desktop or RStudio:
 ### On Camera
 
 ### Animated Video
+
+In this animated video, I want to show the filing cabinet with files in it, each representing one commit. The architect here could look through the filing cabinet in order to see the history of their work over time.
 
 ### On Screen
 
@@ -220,17 +233,12 @@ Then, in GitHub Desktop or RStudio:
 
 ### Animated Video
 
+The animated video should show GitHub as a sort of HQ office for the architecture company. In the HQ, there are many filing cabinets, each representing a single repository. 
+
 ### On Screen
 
-- There are other systems (GitLab etc)
+- There are other systems (GitLab, Bitbucket, etc)
 - One repo per project in R
-- Commit history is same on GH as what we saw locally
-
-## Your Turn {.your-turn}
-
-- Open the GitHub repository for my website project.
-- Click on commits.
-- Take a look through the commit history to see how the code changed over time.
 
 ## Connect to GitHub {.inverse}
 
@@ -238,7 +246,10 @@ Then, in GitHub Desktop or RStudio:
 
 ### Animated Video
 
+The animated video should show the creation of some sort of pneumatic tube system (though maybe this isn't great because you can't put a whole file folder in it; perhaps it could be a factory line-style system that file folders go on; I'm open to your ideas here). Whatever system we use, the video should show it being built to connect the architect's office to HQ.
+
 ### On Screen
+
 
 #### Connect to GitHub
 
@@ -247,20 +258,24 @@ Then, in GitHub Desktop or RStudio:
 - In RStudio, do PAT business
 - Tell people to do RStudio PAT business because it will enable them to install repos (check if removing credentials means you can no longer install packages). See <https://arc.net/l/quote/aharrxyw>
 
-#### Local vs remote
-
-- Local vs remote/origin (see <https://arc.net/l/quote/muqmphgn>)
-- GitHub is your remote
-
 ## Your Turn {.your-turn}
 
-- Connect to GitHub using both GitHub Desktop and RStudio.
+- Connect to GitHub using GitHub Desktop.
+- Connect to GitHub using RStudio.
 
 ## Publish Repository from Local to Remote {.inverse}
 
 ### On Camera
 
+
+#### Local vs remote
+
+- Local vs remote/origin (see <https://arc.net/l/quote/muqmphgn>)
+- GitHub is your remote
+
 ### Animated Video
+
+The animated video should show how the architect publishes a copy of all of their work on the project to HQ using the system set up in the previous lesson. One thing to note here is that pushing code to GitHub involves making a copy of it, as you still have the code locally as well. I wonder if we maybe show the blueprints being copied on an old-school copying machine first before they get sent to HQ. 
 
 ### On Screen
 
@@ -278,6 +293,8 @@ Then, in GitHub Desktop or RStudio:
 
 ### Animated Video
 
+In the animated video, I would just show an existing filing cabinet in HQ being connected to the architect's office through a pneumatic tube (or other) system. It's the building of the connection between HQ and local office that is most important to show.
+
 ### On Screen
 
 - Create new repo on GH and clone it locally
@@ -285,13 +302,17 @@ Then, in GitHub Desktop or RStudio:
 
 ## Your Turn {.your-turn}
 
-- Clone my website project.
+- Create a repo on GitHub.
 
-## Keep Local and Remote in Sync {.inverse}
+- Clone it using GitHub Desktop or RStudio.
+
+## Keep Local and Remote Repositories in Sync {.inverse}
 
 ### On Camera
 
 ### Animated Video
+
+The terms used to talk about this process are **push** (local to remote) and **pull** (remote to local). I wonder if we make this explicit in this video and previous ones by having the pneumatic tube (or other) system involve physical pushing and pulling. No matter how we show this, the animated video for this lesson should show the architect working on blueprints, making a commit (i.e. adding new file folders in the cabinet), and then pushing this commit to GitHub. Similarly, it should show the process of pulling updates when others have worked on the blueprints and pushed their changes to HQ. The slightly confusing thing here is that we haven't actually talked about collaboration, but I'll mention in my on-camera portion of the video that the next section of the course covers this.
 
 ### On Screen
 
@@ -317,6 +338,8 @@ Then, in GitHub Desktop or RStudio:
 
 - Make a commit in your local repo.
 - Push your commit to GitHub using GitHub Desktop or RStudio.
+- Make a change on GitHub.
+- Pull to get this commit using GitHub Desktop or RStudio.
 
 # Collaboration with GitHub {.inverse}
 
@@ -353,11 +376,11 @@ No animated video, but maybe show animated pieces along the way as I talk. Do th
 
 ### Animated Video
 
-No animated video
+For the animated video, I imagine architects in a meeting being assigned to a project and then getting filing cabinets rolled into their offices. 
 
 ### On Screen
 
-- Personal vs Organization Accounts
+- Personal vs Organization Accounts (show how to transfer repo)
 - Adding People to Your Repo
 - [Forks](https://stackoverflow.com/questions/3611256/forking-vs-branching-in-github) 
 
@@ -366,6 +389,8 @@ No animated video
 ### On Camera
 
 ### Animated Video
+
+For the animated video, I imagine this being some kind of physical board where tasks are posted. I can imagine something where architects for the company come in each day and receive the tasks they are supposed to work on. They would be assigned to them on the board in some way and the architects would then take them on their way to their offices. 
 
 ### On Screen
 
@@ -380,6 +405,8 @@ No animated video
 - Labels for ongoing things
 - Milestones for one-time things
 - Projects to see all things visually
+- Wiki
+- Discussions
 
 #### Notifications
 
@@ -404,7 +431,11 @@ No animated video
 
 ### On Camera
 
+One of the major benefits of working with GitHub is that you can use branches. This is like making a copy of your code, working on it, and only if you decide you like it, you can then merge it back into the "main" branch of your project. 
+
 ### Animated Video
+
+For the animated video, I envision branches as being like different drawers in the filing cabinet. The drawer that the architect has been working on so far in the videos is the "main" branch, but they can also use different branches to test.  I'm imaging something like the architect saying they want to test a new design for the living room so they create a branch. They work, creating commits in this branch. 
 
 ### On Screen
 
@@ -415,6 +446,8 @@ No animated video
 - Test things on live site
 
 #### Linking issues to branches
+
+#### Creating branches in GHD
 
 ## Your Turn {.your-turn}
 
@@ -429,7 +462,11 @@ No animated video
 
 ### On Camera
 
+To get code from a branch back into the main branch, the usual approach is what's known as a pull request. This is a way for users to get others to review their code before merging it into the main branch. 
+
 ### Animated Video
+
+In the animated video, I imagine the architect showing the work they did on the living room in a branch. The boss reviews the revisions and if she agrees that it should be included in the main branch, the pull request is merged into the main branch.
 
 ### On Screen
 
@@ -437,7 +474,7 @@ No animated video
 - Show PR
 - Dealing with merge conflicts in PRs (say that this will be discussed more in future lesson)
 - Code reviews
-- Magic words for closing
+- [Magic words for closing](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
 
 ## Your Turn {.your-turn}
 
