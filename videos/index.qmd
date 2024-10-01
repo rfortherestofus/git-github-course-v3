@@ -132,6 +132,8 @@ In the animated video, I would just show an existing filing cabinet in HQ being 
 
 ## Keep Local and Remote in Sync
 
+[Descript link](https://share.descript.com/view/SNcAeaxl3jF)
+
 This lesson shows how to keep code in the local project and remote repo in sync. 
 
 The terms used to talk about this process are **push** (local to remote) and **pull** (remote to local). I wonder if we make this explicit in this video and previous ones by having the pneumatic tube (or other) system involve physical pushing and pulling. No matter how we show this, the animated video for this lesson should show the architect working on blueprints, making a commit (i.e. adding new file folders in the cabinet), and then pushing this commit to GitHub. Similarly, it should show the process of pulling updates when others have worked on the blueprints and pushed their changes to HQ. The slightly confusing thing here is that we haven't actually talked about collaboration, but I'll mention in my on-camera portion of the video that the next section of the course covers this.
