@@ -441,8 +441,8 @@ For the animated video, I envision branches as being like different drawers in t
 
 #### Why should you use them
 
-- Do PRs to get feedback
 - Test things and only merge back in if you like what you did
+- Do PRs to get feedback
 - Test things on live site
 
 #### Linking issues to branches
@@ -478,10 +478,10 @@ In the animated video, I imagine the architect showing the work they did on the 
 
 ## Your Turn {.your-turn}
 
-- Create a pull request from GitHub Desktop.
-- Review the pull request on GitHub.
-- Merge your pull request.
-- Make sure your GitHub issue is also closed after the pull request is merged.
+1. Create a pull request from GitHub Desktop.
+1. Review the pull request on GitHub.
+1. Merge your pull request.
+1. Make sure your GitHub issue is also closed after the pull request is merged.
 
 # Common Git Problems and Solutions {.inverse}
 
@@ -490,6 +490,8 @@ In the animated video, I imagine the architect showing the work they did on the 
 ### On Camera
 
 ### Animated Video
+
+In the animated video, I imagine showing the original architect (we should probably give her a name) working on blueprints in her office. She hasn’t saved her changes but sees that someone else made changes and pushed them to HQ. She tries to pull the changes down but can’t because git doesn’t know if your local changes will conflict with changes someone else made. The solution is that you have to make a commit first and then you can pull.
 
 ### On Screen
 
@@ -513,8 +515,11 @@ This is why branches are helpful
 1. Make an edit to the `index.qmd` file on your website project locally but **don't commit changes**.
 1. Make edit to `index.qmd` file on GitHub.com and save it.
 1. Attempt to pull from GitHub. You should get a message about needing to commit changes before pulling.
-1. Commit your local changes.
-1. Pull again, making sure you can successfully bring in the changes from GitHub.
+
+## Your Turn {.your-turn}
+
+4. Commit your local changes.
+5. Pull again, making sure you can successfully bring in the changes from GitHub.
 
 ::: {.notes}
 Heads up: you should get a message about a merge conflict. We’ll deal with this in the next lesson!
@@ -524,9 +529,17 @@ Heads up: you should get a message about a merge conflict. We’ll deal with thi
 
 ### On Camera
 
+- Merge conflicts are the scariest part of GitHub for many people: Please Let Me Merge Before I Start Crying
+- Happen when you and someone else edit the same line
+- You've experienced conflicts with Dropbox
+- Git doesn't decide which version to keep
+
 ### Animated Video
 
+For the animated video, I imagine one architect working on a file and another working on the same file. One pushes their code to GitHub. Then, when the second one tries to pull, there is a merge conflict because they edited the same part of the file. The video should then show the solution where one architect (the one who pulled) has to decide which version of the blueprints to keep.
+
 ### On Screen
+
 
 #### Merge conflict markers etc
 
@@ -555,10 +568,12 @@ In PRs, update branch from main periodically in order to not get too far behind 
 
 ## Your Turn {.your-turn}
 
+. . .
+
 You should have a merge conflict from last lesson.
 
-1. Fix merge conflict using GitHub Desktop, RStudio, or GitHub.com.
-1. Make a commit.
+1. Fix the merge conflict using RStudio.
+1. Confirm in GitHub Desktop.
 1. Push your code to GitHub.
 
 ## Can't Push Code to GitHub {.inverse}
@@ -567,13 +582,15 @@ You should have a merge conflict from last lesson.
 
 ### Animated Video
 
+In the animated video, I imagine one architect has done work on blueprints, but hasn't yet pulled others' work from HQ. She gets stuck and then realizes she has to pull first and then push. 
+
 ### On Screen
 
 ## Your Turn {.your-turn}
 
 1. Make an edit on GitHub.
 1. Make an edit locally.
-1. Attempt to push your changes from RStudio to GitHub (it should fail).
+1. Attempt to push your changes from your local repository to GitHub (it should fail).
 1. Pull in changes from GitHub.
 1. Deal with any merge conflicts.
 1. Push your changes to GitHub.
@@ -584,6 +601,8 @@ You should have a merge conflict from last lesson.
 
 ### Animated Video
 
+For the animated video, I imagine there being a set of files that get created when the various blueprints are combined. Since these files can be created by each architect on their own computer and would change all of the time, we don't want them tracked by git. In the video, we would show one architect adding files to the gitignore so they don't get tracked and we avoid conflicts.  
+
 ### On Screen
 
 - Ignore things you never want added (better than unchecking them every commit)
@@ -593,6 +612,8 @@ You should have a merge conflict from last lesson.
 ## Your Turn {.your-turn}
 
 1. Add `_site` to gitignore.
+1. Delete the `_site` folder.
+1. Make a commit and push to GitHub.
 
 ## Best Practices for Using Git and GitHub {.inverse}
 
@@ -604,14 +625,16 @@ You should have a merge conflict from last lesson.
 
 Make small commits
 
-- Nick Hodges quote
-- Maelle Salmon blog post
+[Nick Hodges 
+quote](https://arc.net/l/quote/qxmekmfi)
+
+Use descriptive commit messages
 
 Push early and often
 
-Use branches
+Use branches and pull requests
 
-If necessary, burn it all Down: https://happygitwithr.com/burn
+If necessary, [burn it all Down](https://happygitwithr.com/burn) 
 
 # Common Git Techniques {.inverse}
 

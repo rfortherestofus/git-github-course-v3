@@ -1004,8 +1004,8 @@
 <section id="why-should-you-use-them" class="slide level4">
 <h4>Why should you use them</h4>
 <ul>
-<li class="fragment">Do PRs to get feedback</li>
 <li class="fragment">Test things and only merge back in if you like what you did</li>
+<li class="fragment">Do PRs to get feedback</li>
 <li class="fragment">Test things on live site</li>
 </ul>
 </section>
@@ -1057,12 +1057,12 @@
 
 <section id="your-turn-12" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
-<ul>
+<ol type="1">
 <li class="fragment">Create a pull request from GitHub Desktop.</li>
 <li class="fragment">Review the pull request on GitHub.</li>
 <li class="fragment">Merge your pull request.</li>
 <li class="fragment">Make sure your GitHub issue is also closed after the pull request is merged.</li>
-</ul>
+</ol>
 </section>
 </section>
 <section>
@@ -1081,7 +1081,7 @@
 
 <section id="animated-video-17" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>In the animated video, I imagine showing the original architect (we should probably give her a name) working on blueprints in her office. She hasn’t saved her changes but sees that someone else made changes and pushed them to HQ. She tries to pull the changes down but can’t because git doesn’t know if your local changes will conflict with changes someone else made. The solution is that you have to make a commit first and then you can pull.</p>
 </section>
 
 <section id="on-screen-16" class="title-slide slide level3 center">
@@ -1113,6 +1113,12 @@
 <li class="fragment">Make an edit to the <code>index.qmd</code> file on your website project locally but <strong>don’t commit changes</strong>.</li>
 <li class="fragment">Make edit to <code>index.qmd</code> file on GitHub.com and save it.</li>
 <li class="fragment">Attempt to pull from GitHub. You should get a message about needing to commit changes before pulling.</li>
+</ol>
+</section>
+
+<section id="your-turn-14" class="title-slide slide level2 your-turn center">
+<h2>Your Turn</h2>
+<ol start="4" type="1">
 <li class="fragment">Commit your local changes.</li>
 <li class="fragment">Pull again, making sure you can successfully bring in the changes from GitHub.</li>
 </ol>
@@ -1137,12 +1143,17 @@
 </section>
 <section id="on-camera-19" class="title-slide slide level3 center">
 <h3>On Camera</h3>
-
+<ul>
+<li class="fragment">Merge conflicts are the scariest part of GitHub for many people: Please Let Me Merge Before I Start Crying</li>
+<li class="fragment">Happen when you and someone else edit the same line</li>
+<li class="fragment">You’ve experienced conflicts with Dropbox</li>
+<li class="fragment">Git doesn’t decide which version to keep</li>
+</ul>
 </section>
 
 <section id="animated-video-18" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>For the animated video, I imagine one architect working on a file and another working on the same file. One pushes their code to GitHub. Then, when the second one tries to pull, there is a merge conflict because they edited the same part of the file. The video should then show the solution where one architect (the one who pulled) has to decide which version of the blueprints to keep.</p>
 </section>
 
 <section id="on-screen-17" class="title-slide slide level3 center">
@@ -1179,14 +1190,16 @@
 </section>
 
 
-<section id="your-turn-14" class="title-slide slide level2 your-turn center">
+<section id="your-turn-15" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
+<div class="fragment">
 <p>You should have a merge conflict from last lesson.</p>
 <ol type="1">
-<li class="fragment">Fix merge conflict using GitHub Desktop, RStudio, or GitHub.com.</li>
-<li class="fragment">Make a commit.</li>
+<li class="fragment">Fix the merge conflict using RStudio.</li>
+<li class="fragment">Confirm in GitHub Desktop.</li>
 <li class="fragment">Push your code to GitHub.</li>
 </ol>
+</div>
 </section>
 
 <section id="cant-push-code-to-github" class="title-slide slide level2 inverse center">
@@ -1200,7 +1213,7 @@
 
 <section id="animated-video-19" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>In the animated video, I imagine one architect has done work on blueprints, but hasn’t yet pulled others’ work from HQ. She gets stuck and then realizes she has to pull first and then push.</p>
 </section>
 
 <section id="on-screen-18" class="title-slide slide level3 center">
@@ -1209,12 +1222,12 @@
 </section>
 
 
-<section id="your-turn-15" class="title-slide slide level2 your-turn center">
+<section id="your-turn-16" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
 <li class="fragment">Make an edit on GitHub.</li>
 <li class="fragment">Make an edit locally.</li>
-<li class="fragment">Attempt to push your changes from RStudio to GitHub (it should fail).</li>
+<li class="fragment">Attempt to push your changes from your local repository to GitHub (it should fail).</li>
 <li class="fragment">Pull in changes from GitHub.</li>
 <li class="fragment">Deal with any merge conflicts.</li>
 <li class="fragment">Push your changes to GitHub.</li>
@@ -1232,7 +1245,7 @@
 
 <section id="animated-video-20" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>For the animated video, I imagine there being a set of files that get created when the various blueprints are combined. Since these files can be created by each architect on their own computer and would change all of the time, we don’t want them tracked by git. In the video, we would show one architect adding files to the gitignore so they don’t get tracked and we avoid conflicts.</p>
 </section>
 
 <section id="on-screen-19" class="title-slide slide level3 center">
@@ -1245,10 +1258,12 @@
 </section>
 
 
-<section id="your-turn-16" class="title-slide slide level2 your-turn center">
+<section id="your-turn-17" class="title-slide slide level2 your-turn center">
 <h2>Your Turn</h2>
 <ol type="1">
 <li class="fragment">Add <code>_site</code> to gitignore.</li>
+<li class="fragment">Delete the <code>_site</code> folder.</li>
+<li class="fragment">Make a commit and push to GitHub.</li>
 </ol>
 </section>
 
@@ -1269,13 +1284,11 @@
 <section id="on-screen-20" class="title-slide slide level3 center">
 <h3>On Screen</h3>
 <p>Make small commits</p>
-<ul>
-<li class="fragment">Nick Hodges quote</li>
-<li class="fragment">Maelle Salmon blog post</li>
-</ul>
+<p><a href="https://arc.net/l/quote/qxmekmfi">Nick Hodges quote</a></p>
+<p>Use descriptive commit messages</p>
 <p>Push early and often</p>
-<p>Use branches</p>
-<p>If necessary, burn it all Down: https://happygitwithr.com/burn</p>
+<p>Use branches and pull requests</p>
+<p>If necessary, <a href="https://happygitwithr.com/burn">burn it all Down</a></p>
 </section>
 
 </section>
