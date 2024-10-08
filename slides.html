@@ -1303,18 +1303,27 @@
 </section>
 <section id="on-camera-23" class="title-slide slide level3 center">
 <h3>On Camera</h3>
-
+<ul>
+<li class="fragment">In this section, show common techniques you will need to do</li>
+<li class="fragment">Imagine you work on a computer at office and at home</li>
+</ul>
 </section>
 
 <section id="animated-video-22" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>For the animated video, I think we could show the architect working at the office and then going home and wanting to work a bit at night. In the video, we could show how you can set up a pneumatic tube system to connect from HQ to home as well as the system that connects office to HQ.</p>
 </section>
 
 <section id="on-screen-21" class="title-slide slide level3 center">
 <h3>On Screen</h3>
 <ul>
 <li class="fragment">Show working on Mac at work and Windows at home</li>
+<li class="fragment">Set up computer at home to use git with same account</li>
+<li class="fragment">Clone repo</li>
+<li class="fragment">Work on repo</li>
+<li class="fragment">Make commit</li>
+<li class="fragment">Push to GH</li>
+<li class="fragment">Back at office, pull from GH</li>
 </ul>
 <aside class="notes">
 <p>Video for Hannah: https://show.rfor.us/Q94ng65p</p>
@@ -1332,28 +1341,35 @@
 </section>
 
 
+<section id="your-turn-18" class="title-slide slide level2 your-turn center">
+<h2>Your Turn</h2>
+<p>Nothing, but feel free to test this out if you work on multiple computers</p>
+</section>
+
 <section id="how-to-avoid-putting-sensitive-information-on-github" class="title-slide slide level2 inverse center">
 <h2>How to Avoid Putting Sensitive Information on GitHub</h2>
 
 </section>
 <section id="on-camera-24" class="title-slide slide level3 center">
 <h3>On Camera</h3>
-
+<ul>
+<li class="fragment">Two types of sensitive info to avoid sharing: data and API keys</li>
+</ul>
 </section>
 
 <section id="animated-video-23" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>For the animated video, I imagine an architect has a file that has a set of proprietary colors that the firm uses. Since they don’t want this to ever get out, they have to come up with strategies to access it without including it in their GitHub repository. The way to show this is probably to put the file in special location outside of the repository and then pulling it onto their desk whenever they want to work with it.</p>
 </section>
 
 <section id="on-screen-22" class="title-slide slide level3 center">
 <h3>On Screen</h3>
 <p>Options:</p>
 <ul>
-<li class="fragment">gitignore files</li>
+<li class="fragment">gitignore files and ensure everyone has data files in same place</li>
+<li class="fragment">Put data in some other tool and access it with a package like googlesheets4/googledrive</li>
 <li class="fragment">Use special location on network drive etc in code that only internal people can access</li>
-<li class="fragment">Put data in some other tool and access it with a package like googlesheets4</li>
-<li class="fragment">Use environment variables</li>
+<li class="fragment">Use environment variables for API keys</li>
 </ul>
 </section>
 
@@ -1364,20 +1380,25 @@
 </section>
 <section id="on-camera-25" class="title-slide slide level3 center">
 <h3>On Camera</h3>
-
+<ul>
+<li class="fragment">We’ve created code for website, but not yet deployed it</li>
+<li class="fragment">How can we do this?</li>
+<li class="fragment">I’ll show a way to deploy continuously so that any time you make changes, the website will update</li>
+</ul>
 </section>
 
 <section id="animated-video-24" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>For the animated video, I’m imagining a scenario where the architect brings together all parts of the blueprints on her local system. Whenever she makes changes and pushes them to HQ, the final combined version of the blueprints is created in a location accessible to the builders of the house. This can be updated any time new blueprints are pushed to HQ.</p>
 </section>
 
 <section id="on-screen-23" class="title-slide slide level3 center">
 <h3>On Screen</h3>
 <ul>
+<li class="fragment">Use Netlify drop</li>
 <li class="fragment">Unignore <code>_site</code></li>
-<li class="fragment">Show using GH Pages</li>
 <li class="fragment">Show using Netlify</li>
+<li class="fragment">Show using GH Pages</li>
 </ul>
 </section>
 
@@ -1393,13 +1414,18 @@
 
 <section id="animated-video-25" class="title-slide slide level3 center">
 <h3>Animated Video</h3>
-
+<p>This lesson takes the last lesson one step further. While in the last lesson the architect herself has to combine the blueprints into a single blueprint for the builders, with this technique, you can have the blueprints combine themselves any time you push to GitHub. This is done using <a href="https://rfortherestofus.com/2023/05/github-actions">GitHub Actions</a>.</p>
+<p>In the animated video, I imagine the blueprints combining themselves into a single file every time an update is pushed to HQ.</p>
 </section>
 
 <section id="on-screen-24" class="title-slide slide level3 center">
 <h3>On Screen</h3>
 <ul>
 <li class="fragment">Set up GH Action</li>
+<li class="fragment">Use existing actions</li>
+<li class="fragment">GH pages</li>
+<li class="fragment">Netlify</li>
+<li class="fragment">How to install R packages (see https://github.com/rfortherestofus/cwp-dashboard/blob/main/.github/workflows/update-data.yml)</li>
 </ul>
 </section>
 

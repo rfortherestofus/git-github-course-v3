@@ -642,52 +642,88 @@ If necessary, [burn it all Down](https://happygitwithr.com/burn)
 
 ### On Camera
 
+- In this section, show common techniques you will need to do
+- Imagine you work on a computer at office and at home
+
 ### Animated Video
+
+For the animated video, I think we could show the architect working at the office and then going home and wanting to work a bit at night. In the video, we could show how you can set up a pneumatic tube system to connect from HQ to home as well as the system that connects office to HQ.
 
 ### On Screen
 
 - Show working on Mac at work and Windows at home
+- Set up computer at home to use git with same account
+- Clone repo
+- Work on repo
+- Make commit
+- Push to GH
+- Back at office, pull from GH
 
 ::: {.notes}
 Video for Hannah: https://show.rfor.us/Q94ng65p
 :::
 
+## Your Turn {.your-turn}
+
+Nothing, but feel free to test this out if you work on multiple computers
+
+
 ## How to Avoid Putting Sensitive Information on GitHub {.inverse}
 
 ### On Camera
 
+- Two types of sensitive info to avoid sharing: data and API keys
+
 ### Animated Video
+
+For the animated video, I imagine an architect has a file that has a set of proprietary colors that the firm uses. Since they don't want this to ever get out, they have to come up with strategies to access it without including it in their GitHub repository. The way to show this is probably to put the file in special location outside of the repository and then pulling it onto their desk whenever they want to work with it.
 
 ### On Screen
 
 Options:
 
-- gitignore files
+- gitignore files and ensure everyone has data files in same place
+- Put data in some other tool and access it with a package like googlesheets4/googledrive
 - Use special location on network drive etc in code that only internal people can access
-- Put data in some other tool and access it with a package like googlesheets4
-- Use environment variables
+- Use environment variables for API keys
 
 ## Continuous Deployment {.inverse}
 
 ### On Camera
 
+- We've created code for website, but not yet deployed it
+- How can we do this?
+- I'll show a way to deploy continuously so that any time you make changes, the website will update
+
 ### Animated Video
+
+For the animated video, I'm imagining a scenario where the architect brings together all parts of the blueprints on her local system. Whenever she makes changes and pushes them to HQ, the final combined version of the blueprints is created in a location accessible to the builders of the house. This can be updated any time new blueprints are pushed to HQ.
 
 ### On Screen
 
+- Use Netlify drop
 - Unignore `_site`
-- Show using GH Pages
 - Show using Netlify
+- Show using GH Pages
 
 ## Use GitHub Actions to Run Code Automatically {.inverse}
 
 ### On Camera
 
+
 ### Animated Video
+
+This lesson takes the last lesson one step further. While in the last lesson the architect herself has to combine the blueprints into a single blueprint for the builders, with this technique, you can have the blueprints combine themselves any time you push to GitHub. This is done using [GitHub Actions](https://rfortherestofus.com/2023/05/github-actions).
+
+In the animated video, I imagine the blueprints combining themselves into a single file every time an update is pushed to HQ.
 
 ### On Screen
 
 - Set up GH Action
+- Use existing actions
+- GH pages
+- Netlify
+- How to install R packages (see https://github.com/rfortherestofus/cwp-dashboard/blob/main/.github/workflows/update-data.yml)
 
 # Wrapping Up {.inverse}
 

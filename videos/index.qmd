@@ -150,11 +150,15 @@ No animated video, but maybe show animated pieces along the way as I talk. Do th
 
 ## Set up GitHub Repositories for Collaboration
 
+[Descript link](https://share.descript.com/view/6WVS8UVJCwh)
+
 This video talks about adding other users to GitHub repositories so they can collaborate on them.
 
 For the animated video, I imagine architects in a meeting being assigned to a project and then getting filing cabinets rolled into their offices. 
 
 ## Project Management with GitHub
+
+[Descript link](https://share.descript.com/view/F9ptaJpE2MA)
 
 This lesson shows how to use built-in project management tools in GitHub. The main tool I demonstrate this is [GitHub issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues). 
 
