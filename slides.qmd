@@ -706,6 +706,13 @@ For the animated video, I'm imagining a scenario where the architect brings toge
 - Show using Netlify
 - Show using GH Pages
 
+## Your Turn {.your-turn}
+
+1. Unignore your `_site` folder.
+1. Connect your GitHub repo to Netlify and deploy it as a website.
+1. Make a change to your website and render it on your computer.
+1. Push your changes to GitHub and ensure they show up on your website.
+
 ## Use GitHub Actions to Run Code Automatically {.inverse}
 
 ### On Camera
@@ -724,6 +731,10 @@ In the animated video, I imagine the blueprints combining themselves into a sing
 - GH pages
 - Netlify
 - How to install R packages (see https://github.com/rfortherestofus/cwp-dashboard/blob/main/.github/workflows/update-data.yml)
+
+## Your Turn {.your-turn}
+
+- Set up your website to deploy with GitHub Actions
 
 # Wrapping Up {.inverse}
 
